@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="0ag-5C-vbg">
+            <objects>
+                <viewController id="DDr-NZ-vcv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5xy-wR-9QJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group" translatesAutoresizingMaskIntoConstraints="NO" id="IRZ-zc-GxJ">
+                                <rect key="frame" x="177" y="144" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="4X3-Xk-r5j"/>
+                                    <constraint firstAttribute="height" constant="60" id="ZYh-js-9C5"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ha3-aQ-ZPq" customClass="CaptionLabel" customModule="CoVID_19_Companion" customModuleProvider="target">
+                                <rect key="frame" x="33" y="216" width="352" height="69.5"/>
+                                <string key="text">CoVID-19
+Companion</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="29"/>
+                                <color key="textColor" red="0.12941176469999999" green="0.58823529409999997" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ukw-OY-OQb">
+                                <rect key="frame" x="33" y="374.5" width="352" height="94"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="DAILY MOTIVATION">
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" metaFont="system" size="20"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Regularly and thoroughly clean your hands with an alcohol-based hand rub or wash them with soap and water. based hand rub or wash them with soap and water.</string>
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" metaFont="system" size="15"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d4J-6T-4YS">
+                                <rect key="frame" x="33" y="538.5" width="352" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ukw-OY-OQb" firstAttribute="trailing" secondItem="ha3-aQ-ZPq" secondAttribute="trailing" id="3Is-zi-KmA"/>
+                            <constraint firstItem="ha3-aQ-ZPq" firstAttribute="leading" secondItem="jrC-gi-vIl" secondAttribute="leading" constant="33" id="6qp-12-zVn"/>
+                            <constraint firstItem="ukw-OY-OQb" firstAttribute="leading" secondItem="ha3-aQ-ZPq" secondAttribute="leading" id="DSk-gh-H1l"/>
+                            <constraint firstItem="d4J-6T-4YS" firstAttribute="top" secondItem="ukw-OY-OQb" secondAttribute="bottom" constant="70" id="HEG-Ii-xuR"/>
+                            <constraint firstItem="d4J-6T-4YS" firstAttribute="trailing" secondItem="ukw-OY-OQb" secondAttribute="trailing" id="L4n-iz-yNf"/>
+                            <constraint firstItem="jrC-gi-vIl" firstAttribute="trailing" secondItem="ha3-aQ-ZPq" secondAttribute="trailing" constant="29" id="LcN-EI-wi3"/>
+                            <constraint firstItem="ha3-aQ-ZPq" firstAttribute="top" secondItem="IRZ-zc-GxJ" secondAttribute="bottom" constant="12" id="Vs6-J9-1XX"/>
+                            <constraint firstItem="d4J-6T-4YS" firstAttribute="leading" secondItem="ukw-OY-OQb" secondAttribute="leading" id="ZX3-0j-QZc"/>
+                            <constraint firstItem="IRZ-zc-GxJ" firstAttribute="top" secondItem="jrC-gi-vIl" secondAttribute="top" constant="100" id="gtv-zB-uf3"/>
+                            <constraint firstItem="ukw-OY-OQb" firstAttribute="top" secondItem="ha3-aQ-ZPq" secondAttribute="bottom" constant="89" id="h8a-Qu-HiQ"/>
+                            <constraint firstItem="IRZ-zc-GxJ" firstAttribute="centerX" secondItem="jrC-gi-vIl" secondAttribute="centerX" id="tq9-Pm-9Id"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jrC-gi-vIl"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oZw-7C-g6E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-149.27536231884059" y="166.74107142857142"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="29F-Bv-B0X">
+            <objects>
+                <viewController id="63i-fy-vj6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0dV-eb-0Br">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wash your hands frequently" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l9Y-qQ-bk7" customClass="CaptionLabel" customModule="CoVID_19_Companion" customModuleProvider="target">
+                                <rect key="frame" x="20" y="65" width="303" height="69.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="29"/>
+                                <color key="textColor" red="0.12941176469999999" green="0.58823529409999997" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Handwashing-rafiki 1" translatesAutoresizingMaskIntoConstraints="NO" id="g2p-bi-glN">
+                                <rect key="frame" x="20" y="199.5" width="241" height="241"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="241" id="MVS-5I-wuD"/>
+                                    <constraint firstAttribute="width" constant="241" id="RlO-fu-cTh"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4rK-M9-Sls">
+                                <rect key="frame" x="20" y="532" width="374" height="133"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Regularly and thoroughly clean your hands with an alcohol-based hand rub or wash them with soap and water.">
+                                        <attributes>
+                                            <color key="NSColor" red="0.50588235290000005" green="0.50588235290000005" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="16"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Why?">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="20"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Washing your hands with soap and water or using alcohol-based hand rub kills viruses that may be on your hands.">
+                                        <attributes>
+                                            <color key="NSColor" red="0.50588235294117645" green="0.50588235294117645" blue="0.50588235294117645" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="15"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Frame 1" translatesAutoresizingMaskIntoConstraints="NO" id="gWp-Bd-tnW">
+                                <rect key="frame" x="20" y="842" width="40" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="MlL-2C-g8R"/>
+                                    <constraint firstAttribute="height" constant="20" id="NTA-dC-KzB"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PDt-jL-SDG">
+                                <rect key="frame" x="362" y="835" width="32" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="g2p-bi-glN" firstAttribute="top" secondItem="l9Y-qQ-bk7" secondAttribute="bottom" constant="65" id="1H9-Pq-9rz"/>
+                            <constraint firstItem="g2p-bi-glN" firstAttribute="leading" secondItem="l9Y-qQ-bk7" secondAttribute="leading" id="3DZ-UU-iQZ"/>
+                            <constraint firstItem="l9Y-qQ-bk7" firstAttribute="leading" secondItem="0dV-eb-0Br" secondAttribute="leading" constant="20" id="FdH-7o-I4D"/>
+                            <constraint firstItem="IfZ-g6-WcW" firstAttribute="trailing" secondItem="l9Y-qQ-bk7" secondAttribute="trailing" constant="91" id="K9Y-pj-39l"/>
+                            <constraint firstItem="4rK-M9-Sls" firstAttribute="leading" secondItem="g2p-bi-glN" secondAttribute="leading" id="Mvw-Z9-AiP"/>
+                            <constraint firstItem="IfZ-g6-WcW" firstAttribute="bottom" secondItem="gWp-Bd-tnW" secondAttribute="bottom" id="SIT-nL-4Tf"/>
+                            <constraint firstItem="PDt-jL-SDG" firstAttribute="trailing" secondItem="4rK-M9-Sls" secondAttribute="trailing" id="Wai-VU-YQ8"/>
+                            <constraint firstItem="4rK-M9-Sls" firstAttribute="top" secondItem="g2p-bi-glN" secondAttribute="bottom" constant="91.5" id="XnQ-GA-ZBj"/>
+                            <constraint firstItem="gWp-Bd-tnW" firstAttribute="leading" secondItem="4rK-M9-Sls" secondAttribute="leading" id="cnv-0y-LJ6"/>
+                            <constraint firstItem="l9Y-qQ-bk7" firstAttribute="top" secondItem="IfZ-g6-WcW" secondAttribute="top" constant="21" id="kpl-4o-mLq"/>
+                            <constraint firstAttribute="trailing" secondItem="4rK-M9-Sls" secondAttribute="trailing" constant="20" id="mBw-nz-xiB"/>
+                            <constraint firstItem="IfZ-g6-WcW" firstAttribute="bottom" secondItem="PDt-jL-SDG" secondAttribute="bottom" id="pmb-Ui-rXa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IfZ-g6-WcW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ceM-d6-5tj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="503" y="167"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9V9-eO-ysJ">
+            <objects>
+                <viewController id="mMr-NH-zWF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nrw-wP-OCS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maintain social distancing" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dum-jC-KJp" customClass="CaptionLabel" customModule="CoVID_19_Companion" customModuleProvider="target">
+                                <rect key="frame" x="20" y="65" width="303" height="69.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="29"/>
+                                <color key="textColor" red="0.12941176469999999" green="0.58823529409999997" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Social Distancing-rafiki 1" translatesAutoresizingMaskIntoConstraints="NO" id="dtB-N3-7Vh">
+                                <rect key="frame" x="20" y="199.5" width="241" height="241"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="241" id="cTS-au-xQ1"/>
+                                    <constraint firstAttribute="height" constant="241" id="yo2-eQ-MYE"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tst-iR-4MY">
+                                <rect key="frame" x="20" y="532" width="374" height="172"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Maintain at least 1 metre (3 feet) distance between yourself and anyone who is coughing or sneezing.
+
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.50588235290000005" green="0.50588235290000005" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="16"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Why?">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="16"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+When someone coughs or sneezes they spray small liquid droplets from their nose or mouth which may contain virus. If you are too close, you can breathe in the droplets, including the COVID-19 virus if the person coughing has the disease.</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.50588235290000005" green="0.50588235290000005" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="16"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Frame 2" translatesAutoresizingMaskIntoConstraints="NO" id="QRB-ch-u6E">
+                                <rect key="frame" x="20" y="842" width="40" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="BdC-Io-FNx"/>
+                                    <constraint firstAttribute="width" constant="40" id="x8B-3c-Mup"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6aK-nO-IUF">
+                                <rect key="frame" x="362" y="835" width="32" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Mo-Yf-72K" firstAttribute="trailing" secondItem="Dum-jC-KJp" secondAttribute="trailing" constant="91" id="09L-5e-iLW"/>
+                            <constraint firstAttribute="trailing" secondItem="Tst-iR-4MY" secondAttribute="trailing" constant="20" id="4bC-Lm-UM8"/>
+                            <constraint firstItem="6Mo-Yf-72K" firstAttribute="bottom" secondItem="QRB-ch-u6E" secondAttribute="bottom" id="5KQ-1n-YQX"/>
+                            <constraint firstItem="6aK-nO-IUF" firstAttribute="trailing" secondItem="Tst-iR-4MY" secondAttribute="trailing" id="6LX-vU-vlR"/>
+                            <constraint firstItem="dtB-N3-7Vh" firstAttribute="leading" secondItem="Dum-jC-KJp" secondAttribute="leading" id="72D-bw-Xw2"/>
+                            <constraint firstItem="Dum-jC-KJp" firstAttribute="top" secondItem="6Mo-Yf-72K" secondAttribute="top" constant="21" id="7tL-Iv-xe7"/>
+                            <constraint firstItem="Tst-iR-4MY" firstAttribute="leading" secondItem="dtB-N3-7Vh" secondAttribute="leading" id="B6s-Fh-lae"/>
+                            <constraint firstItem="Dum-jC-KJp" firstAttribute="leading" secondItem="Nrw-wP-OCS" secondAttribute="leading" constant="20" id="O9q-Vi-Mqe"/>
+                            <constraint firstItem="Tst-iR-4MY" firstAttribute="top" secondItem="dtB-N3-7Vh" secondAttribute="bottom" constant="91.5" id="RfH-sh-rR4"/>
+                            <constraint firstItem="6Mo-Yf-72K" firstAttribute="bottom" secondItem="6aK-nO-IUF" secondAttribute="bottom" id="hya-ho-ENA"/>
+                            <constraint firstItem="dtB-N3-7Vh" firstAttribute="top" secondItem="Dum-jC-KJp" secondAttribute="bottom" constant="65" id="mWJ-r1-tby"/>
+                            <constraint firstItem="QRB-ch-u6E" firstAttribute="leading" secondItem="Tst-iR-4MY" secondAttribute="leading" id="tFe-u5-kfA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Mo-Yf-72K"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="acs-6t-dFf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1249" y="167"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="DUG-oV-38Q">
+            <objects>
+                <viewController id="gA4-wt-Jkv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LA0-Mb-fNv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avoid touching eyes, nose and mouth" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4w6-zo-8f6" customClass="CaptionLabel" customModule="CoVID_19_Companion" customModuleProvider="target">
+                                <rect key="frame" x="20" y="65" width="303" height="69.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="29"/>
+                                <color key="textColor" red="0.12941176469999999" green="0.58823529409999997" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="undraw_smiley_face_lmgm (1) 1" translatesAutoresizingMaskIntoConstraints="NO" id="CP9-ZG-8aa">
+                                <rect key="frame" x="20" y="199.5" width="241" height="241"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="241" id="bCb-sv-sKv"/>
+                                    <constraint firstAttribute="width" constant="241" id="qkc-4G-8xC"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6XI-IF-rgn">
+                                <rect key="frame" x="20" y="532" width="374" height="115"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Why?">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="16"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+Hands touch many surfaces and can pick up viruses. Once contaminated, hands can transfer the virus to your eyes, nose or mouth. From there, the virus can enter your body and can make you sick.</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.50588235290000005" green="0.50588235290000005" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="16"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Frame 3" translatesAutoresizingMaskIntoConstraints="NO" id="XlW-82-tzX">
+                                <rect key="frame" x="20" y="842" width="40" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="7Sg-tn-bMH"/>
+                                    <constraint firstAttribute="height" constant="20" id="ePd-Qq-ZEy"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vrm-Dz-vVm">
+                                <rect key="frame" x="362" y="835" width="32" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="evZ-Z4-rzF" firstAttribute="bottom" secondItem="XlW-82-tzX" secondAttribute="bottom" id="4kl-Gr-kNK"/>
+                            <constraint firstItem="CP9-ZG-8aa" firstAttribute="leading" secondItem="4w6-zo-8f6" secondAttribute="leading" id="61z-oe-O0g"/>
+                            <constraint firstItem="CP9-ZG-8aa" firstAttribute="top" secondItem="4w6-zo-8f6" secondAttribute="bottom" constant="65" id="89n-Wb-Ygk"/>
+                            <constraint firstAttribute="trailing" secondItem="6XI-IF-rgn" secondAttribute="trailing" constant="20" id="JwO-v3-IQp"/>
+                            <constraint firstItem="4w6-zo-8f6" firstAttribute="top" secondItem="evZ-Z4-rzF" secondAttribute="top" constant="21" id="Mpz-eO-SQr"/>
+                            <constraint firstItem="6XI-IF-rgn" firstAttribute="leading" secondItem="CP9-ZG-8aa" secondAttribute="leading" id="NpA-hv-77O"/>
+                            <constraint firstItem="evZ-Z4-rzF" firstAttribute="trailing" secondItem="4w6-zo-8f6" secondAttribute="trailing" constant="91" id="Vgg-pt-QYV"/>
+                            <constraint firstItem="6XI-IF-rgn" firstAttribute="top" secondItem="CP9-ZG-8aa" secondAttribute="bottom" constant="91.5" id="Xa4-1O-LmJ"/>
+                            <constraint firstItem="4w6-zo-8f6" firstAttribute="leading" secondItem="LA0-Mb-fNv" secondAttribute="leading" constant="20" id="hvT-9F-H02"/>
+                            <constraint firstItem="Vrm-Dz-vVm" firstAttribute="trailing" secondItem="6XI-IF-rgn" secondAttribute="trailing" id="itm-oU-O5Z"/>
+                            <constraint firstItem="XlW-82-tzX" firstAttribute="leading" secondItem="6XI-IF-rgn" secondAttribute="leading" id="rek-KZ-aBe"/>
+                            <constraint firstItem="evZ-Z4-rzF" firstAttribute="bottom" secondItem="Vrm-Dz-vVm" secondAttribute="bottom" id="tpw-xg-PBG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="evZ-Z4-rzF"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uhd-8Y-gV6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1933" y="167"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vy7-c0-TcJ">
+            <objects>
+                <viewController id="hGt-yO-Nr3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9wz-Vo-wJy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Practice respiratory hygiene" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LOU-xa-D5M" customClass="CaptionLabel" customModule="CoVID_19_Companion" customModuleProvider="target">
+                                <rect key="frame" x="20" y="65" width="303" height="69.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="29"/>
+                                <color key="textColor" red="0.12941176469999999" green="0.58823529409999997" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drawing 1" translatesAutoresizingMaskIntoConstraints="NO" id="43P-UH-HNT">
+                                <rect key="frame" x="20" y="199.5" width="241" height="241"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="241" id="d25-KS-kYZ"/>
+                                    <constraint firstAttribute="width" constant="241" id="dZo-2N-frZ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ta5-Ek-Y0W">
+                                <rect key="frame" x="20" y="532" width="374" height="191"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Make sure you, and the people around you, follow good respiratory hygiene. This means covering your mouth and nose with your bent elbow or tissue when you cough or sneeze. Then dispose of the used tissue immediately.
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.50588235290000005" green="0.50588235290000005" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="16"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+Why?
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="16"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Droplets spread virus. By following good respiratory hygiene you protect the people around you from viruses such as cold, flu and COVID-19.</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.50588235290000005" green="0.50588235290000005" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="16"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Frame 4" translatesAutoresizingMaskIntoConstraints="NO" id="awX-b6-zsE">
+                                <rect key="frame" x="20" y="842" width="40" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Egq-b9-tFp"/>
+                                    <constraint firstAttribute="height" constant="20" id="yRe-2w-EQt"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9G-mJ-61r">
+                                <rect key="frame" x="362" y="835" width="32" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="NhI-PP-dqe" firstAttribute="bottom" secondItem="p9G-mJ-61r" secondAttribute="bottom" id="64l-JV-Qfg"/>
+                            <constraint firstItem="NhI-PP-dqe" firstAttribute="bottom" secondItem="awX-b6-zsE" secondAttribute="bottom" id="6de-gt-Qck"/>
+                            <constraint firstItem="awX-b6-zsE" firstAttribute="leading" secondItem="Ta5-Ek-Y0W" secondAttribute="leading" id="BqN-Yj-djr"/>
+                            <constraint firstItem="LOU-xa-D5M" firstAttribute="top" secondItem="NhI-PP-dqe" secondAttribute="top" constant="21" id="Ncg-69-VkS"/>
+                            <constraint firstItem="NhI-PP-dqe" firstAttribute="trailing" secondItem="LOU-xa-D5M" secondAttribute="trailing" constant="91" id="NiX-s6-O5k"/>
+                            <constraint firstItem="43P-UH-HNT" firstAttribute="top" secondItem="LOU-xa-D5M" secondAttribute="bottom" constant="65" id="V8O-pM-GNR"/>
+                            <constraint firstItem="43P-UH-HNT" firstAttribute="leading" secondItem="LOU-xa-D5M" secondAttribute="leading" id="YjI-qq-DFf"/>
+                            <constraint firstItem="Ta5-Ek-Y0W" firstAttribute="top" secondItem="43P-UH-HNT" secondAttribute="bottom" constant="91.5" id="gPf-af-JcN"/>
+                            <constraint firstItem="p9G-mJ-61r" firstAttribute="trailing" secondItem="Ta5-Ek-Y0W" secondAttribute="trailing" id="jf3-PO-arE"/>
+                            <constraint firstItem="Ta5-Ek-Y0W" firstAttribute="leading" secondItem="43P-UH-HNT" secondAttribute="leading" id="t4g-rU-ZiN"/>
+                            <constraint firstAttribute="trailing" secondItem="Ta5-Ek-Y0W" secondAttribute="trailing" constant="20" id="toP-M5-SPN"/>
+                            <constraint firstItem="LOU-xa-D5M" firstAttribute="leading" secondItem="9wz-Vo-wJy" secondAttribute="leading" constant="20" id="wbn-En-g8t"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NhI-PP-dqe"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wVL-HQ-a1Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2659" y="167"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2jF-2a-oRv">
+            <objects>
+                <viewController id="IuX-iN-Ch1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UvD-Dv-TfQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Self-isolate" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1L-Hk-eSR" customClass="CaptionLabel" customModule="CoVID_19_Companion" customModuleProvider="target">
+                                <rect key="frame" x="20" y="65" width="303" height="35"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="29"/>
+                                <color key="textColor" red="0.12941176469999999" green="0.58823529409999997" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="isolate 1" translatesAutoresizingMaskIntoConstraints="NO" id="Cgt-5m-f9z">
+                                <rect key="frame" x="20" y="165" width="241" height="241"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="241" id="Ume-Bo-hnd"/>
+                                    <constraint firstAttribute="width" constant="241" id="ueU-kx-7Ci"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uu4-a1-zmk">
+                                <rect key="frame" x="20" y="497.5" width="374" height="191"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Stay home and self-isolate even with minor symptoms such as cough, headache, mild fever, until you recover. Have someone bring you supplies. If you need to leave your house, wear a mask to avoid infecting others.
+
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.50588235290000005" green="0.50588235290000005" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="16"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Why?">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="16"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+Avoiding contact with others will protect them from possible COVID-19 and other viruses.
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.50588235290000005" green="0.50588235290000005" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="16"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Frame 4" translatesAutoresizingMaskIntoConstraints="NO" id="Ngt-v9-QPI">
+                                <rect key="frame" x="20" y="842" width="40" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="2r4-NC-qhA"/>
+                                    <constraint firstAttribute="height" constant="20" id="fZd-tB-z8x"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xBs-8I-8Oa">
+                                <rect key="frame" x="362" y="835" width="32" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Uu4-a1-zmk" firstAttribute="top" secondItem="Cgt-5m-f9z" secondAttribute="bottom" constant="91.5" id="1lW-FU-lJN"/>
+                            <constraint firstItem="x0t-pI-Dbg" firstAttribute="trailing" secondItem="p1L-Hk-eSR" secondAttribute="trailing" constant="91" id="79F-4m-fM3"/>
+                            <constraint firstItem="p1L-Hk-eSR" firstAttribute="leading" secondItem="UvD-Dv-TfQ" secondAttribute="leading" constant="20" id="8U3-P7-PXX"/>
+                            <constraint firstItem="x0t-pI-Dbg" firstAttribute="bottom" secondItem="Ngt-v9-QPI" secondAttribute="bottom" id="MuL-Bo-w95"/>
+                            <constraint firstItem="Cgt-5m-f9z" firstAttribute="leading" secondItem="p1L-Hk-eSR" secondAttribute="leading" id="O00-ON-0c9"/>
+                            <constraint firstItem="Ngt-v9-QPI" firstAttribute="leading" secondItem="Uu4-a1-zmk" secondAttribute="leading" id="RAU-aB-Dm6"/>
+                            <constraint firstItem="Cgt-5m-f9z" firstAttribute="top" secondItem="p1L-Hk-eSR" secondAttribute="bottom" constant="65" id="VBd-lU-kbH"/>
+                            <constraint firstItem="x0t-pI-Dbg" firstAttribute="bottom" secondItem="xBs-8I-8Oa" secondAttribute="bottom" id="tii-BA-9eY"/>
+                            <constraint firstItem="Uu4-a1-zmk" firstAttribute="leading" secondItem="Cgt-5m-f9z" secondAttribute="leading" id="uhw-O5-VVM"/>
+                            <constraint firstItem="p1L-Hk-eSR" firstAttribute="top" secondItem="x0t-pI-Dbg" secondAttribute="top" constant="21" id="x6l-O2-YgW"/>
+                            <constraint firstItem="xBs-8I-8Oa" firstAttribute="trailing" secondItem="Uu4-a1-zmk" secondAttribute="trailing" id="yMp-55-DV2"/>
+                            <constraint firstAttribute="trailing" secondItem="Uu4-a1-zmk" secondAttribute="trailing" constant="20" id="zeH-IY-nR7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="x0t-pI-Dbg"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jdn-oa-dzX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3370" y="167"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Oez-XW-gap">
+            <objects>
+                <viewController id="t5O-cc-qNj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cGb-vM-0kT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seek Medical Attention" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRP-LK-0VQ" customClass="CaptionLabel" customModule="CoVID_19_Companion" customModuleProvider="target">
+                                <rect key="frame" x="20" y="65" width="303" height="69.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="29"/>
+                                <color key="textColor" red="0.12941176469999999" green="0.58823529409999997" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="medicalsvg 1" translatesAutoresizingMaskIntoConstraints="NO" id="0Uv-Du-Wcv">
+                                <rect key="frame" x="20" y="199.5" width="241" height="241"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="241" id="PLs-vA-wQ5"/>
+                                    <constraint firstAttribute="width" constant="241" id="fyZ-29-vUe"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lWj-Ft-sEc">
+                                <rect key="frame" x="20" y="532" width="374" height="248.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">If you have a fever, cough and difficulty breathing, seek medical attention, but call by telephone in advance if possible and follow the directions of your local health authority. 
+
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.50588235290000005" green="0.50588235290000005" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="16"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Why?
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="16"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">National and local authorities will have the most up to date information on the situation in your area. Calling in advance will allow your health care provider to quickly direct you to the right health facility. This will also protect you and help prevent spread of viruses and other infections
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.50588235290000005" green="0.50588235290000005" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="16"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Frame 6" translatesAutoresizingMaskIntoConstraints="NO" id="PSg-HK-ov6">
+                                <rect key="frame" x="20" y="842" width="40" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="QEN-bn-jaH"/>
+                                    <constraint firstAttribute="height" constant="20" id="aGV-UY-eAZ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QfD-pc-963">
+                                <rect key="frame" x="362" y="835" width="32" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="rmG-Ue-2XF" firstAttribute="bottom" secondItem="PSg-HK-ov6" secondAttribute="bottom" id="5UA-qm-1RL"/>
+                            <constraint firstItem="0Uv-Du-Wcv" firstAttribute="leading" secondItem="FRP-LK-0VQ" secondAttribute="leading" id="AQ3-WP-tx2"/>
+                            <constraint firstItem="QfD-pc-963" firstAttribute="trailing" secondItem="lWj-Ft-sEc" secondAttribute="trailing" id="FBv-NS-k7Y"/>
+                            <constraint firstItem="rmG-Ue-2XF" firstAttribute="trailing" secondItem="FRP-LK-0VQ" secondAttribute="trailing" constant="91" id="Qae-CP-DWv"/>
+                            <constraint firstItem="FRP-LK-0VQ" firstAttribute="top" secondItem="rmG-Ue-2XF" secondAttribute="top" constant="21" id="QbI-Gw-mMm"/>
+                            <constraint firstAttribute="trailing" secondItem="lWj-Ft-sEc" secondAttribute="trailing" constant="20" id="ZNH-ys-m9Y"/>
+                            <constraint firstItem="lWj-Ft-sEc" firstAttribute="top" secondItem="0Uv-Du-Wcv" secondAttribute="bottom" constant="91.5" id="dLw-ZA-lMI"/>
+                            <constraint firstItem="lWj-Ft-sEc" firstAttribute="leading" secondItem="0Uv-Du-Wcv" secondAttribute="leading" id="mEr-iV-ZyN"/>
+                            <constraint firstItem="0Uv-Du-Wcv" firstAttribute="top" secondItem="FRP-LK-0VQ" secondAttribute="bottom" constant="65" id="noL-KG-Nos"/>
+                            <constraint firstItem="rmG-Ue-2XF" firstAttribute="bottom" secondItem="QfD-pc-963" secondAttribute="bottom" id="p3G-LW-XZv"/>
+                            <constraint firstItem="FRP-LK-0VQ" firstAttribute="leading" secondItem="cGb-vM-0kT" secondAttribute="leading" constant="20" id="rnG-LT-HHT"/>
+                            <constraint firstItem="PSg-HK-ov6" firstAttribute="leading" secondItem="lWj-Ft-sEc" secondAttribute="leading" id="zZ2-62-fq7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rmG-Ue-2XF"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Znu-9U-0gQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4042" y="167"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="nPk-4k-Q2D">
+            <objects>
+                <viewController id="rbf-dp-EU6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="up4-Mn-baS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stay informed and follow advice" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSd-o0-fsa" customClass="CaptionLabel" customModule="CoVID_19_Companion" customModuleProvider="target">
+                                <rect key="frame" x="20" y="65" width="303" height="69.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="29"/>
+                                <color key="textColor" red="0.12941176469999999" green="0.58823529409999997" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Search engines-rafiki 1" translatesAutoresizingMaskIntoConstraints="NO" id="NAI-Rl-Ewb">
+                                <rect key="frame" x="20" y="199.5" width="241" height="241"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="241" id="Taw-Xm-aOQ"/>
+                                    <constraint firstAttribute="width" constant="241" id="srx-fF-IDx"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p7B-TO-z7M">
+                                <rect key="frame" x="20" y="532" width="374" height="248.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Stay informed on the latest developments about COVID-19. Follow advice given by your healthcare provider, your national and local public health authority or your employer on how to protect yourself and others from COVID-19.
+
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.50588235290000005" green="0.50588235290000005" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="16"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Why?
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="16"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">National and local authorities will have the most up to date information on whether COVID-19 is spreading in your area. They are best placed to advise on what people in your area should be doing to protect themselves.
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.50588235290000005" green="0.50588235290000005" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="16"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Frame 7" translatesAutoresizingMaskIntoConstraints="NO" id="UnB-SL-p0r">
+                                <rect key="frame" x="20" y="842" width="40" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="0Bw-aB-Mdl"/>
+                                    <constraint firstAttribute="height" constant="20" id="um6-JD-UXP"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2G-wC-sog">
+                                <rect key="frame" x="313" y="835" width="81" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="GET STARTED">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="p7B-TO-z7M" secondAttribute="trailing" constant="20" id="2us-9b-i2r"/>
+                            <constraint firstItem="NAI-Rl-Ewb" firstAttribute="top" secondItem="gSd-o0-fsa" secondAttribute="bottom" constant="65" id="4GM-B6-GBj"/>
+                            <constraint firstItem="ddS-Nw-Gds" firstAttribute="bottom" secondItem="R2G-wC-sog" secondAttribute="bottom" id="Bqc-Nc-Cjt"/>
+                            <constraint firstItem="p7B-TO-z7M" firstAttribute="top" secondItem="NAI-Rl-Ewb" secondAttribute="bottom" constant="91.5" id="CIg-6S-0Vm"/>
+                            <constraint firstItem="p7B-TO-z7M" firstAttribute="leading" secondItem="NAI-Rl-Ewb" secondAttribute="leading" id="HcF-1f-XOT"/>
+                            <constraint firstItem="ddS-Nw-Gds" firstAttribute="bottom" secondItem="UnB-SL-p0r" secondAttribute="bottom" id="Pfs-Ct-CWP"/>
+                            <constraint firstItem="UnB-SL-p0r" firstAttribute="leading" secondItem="p7B-TO-z7M" secondAttribute="leading" id="QX5-BV-qTq"/>
+                            <constraint firstItem="gSd-o0-fsa" firstAttribute="leading" secondItem="up4-Mn-baS" secondAttribute="leading" constant="20" id="Vjg-LB-gut"/>
+                            <constraint firstItem="R2G-wC-sog" firstAttribute="trailing" secondItem="p7B-TO-z7M" secondAttribute="trailing" id="Xdr-8W-1Ze"/>
+                            <constraint firstItem="ddS-Nw-Gds" firstAttribute="trailing" secondItem="gSd-o0-fsa" secondAttribute="trailing" constant="91" id="aIm-X8-V4y"/>
+                            <constraint firstItem="NAI-Rl-Ewb" firstAttribute="leading" secondItem="gSd-o0-fsa" secondAttribute="leading" id="fR7-ey-dzy"/>
+                            <constraint firstItem="gSd-o0-fsa" firstAttribute="top" secondItem="ddS-Nw-Gds" secondAttribute="top" constant="21" id="fhT-th-asH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ddS-Nw-Gds"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qJ7-M1-Xya" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4758" y="167"/>
+        </scene>
+        <!--Loading View Controller-->
+        <scene sceneID="J6f-oc-ZAe">
+            <objects>
+                <viewController storyboardIdentifier="onboardingCreatingModal" id="35q-Io-WYc" customClass="LoadingViewController" customModule="CoVID_19_Companion" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g9S-CB-w6V">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nhv-EV-RrK">
+                                <rect key="frame" x="25" y="359" width="364" height="188.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creating Your Account" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n62-xp-E1w">
+                                        <rect key="frame" x="8" y="30" width="348" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="hBZ-Kn-1Wb">
+                                        <rect key="frame" x="163.5" y="75.5" width="37" height="37"/>
+                                        <color key="color" red="1" green="0.26673449830000001" blue="0.23661238209999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </activityIndicatorView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading your banking experience..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l2D-Ps-3mu">
+                                        <rect key="frame" x="8" y="137.5" width="348" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="hBZ-Kn-1Wb" firstAttribute="centerX" secondItem="nhv-EV-RrK" secondAttribute="centerX" id="AwH-RP-feI"/>
+                                    <constraint firstItem="n62-xp-E1w" firstAttribute="leading" secondItem="nhv-EV-RrK" secondAttribute="leading" constant="8" id="FAt-h6-TMw"/>
+                                    <constraint firstAttribute="trailing" secondItem="n62-xp-E1w" secondAttribute="trailing" constant="8" id="XMd-TD-gAJ"/>
+                                    <constraint firstItem="l2D-Ps-3mu" firstAttribute="top" secondItem="hBZ-Kn-1Wb" secondAttribute="bottom" constant="25" id="Zum-VU-WUi"/>
+                                    <constraint firstItem="hBZ-Kn-1Wb" firstAttribute="top" secondItem="n62-xp-E1w" secondAttribute="bottom" constant="25" id="dJv-fP-HPq"/>
+                                    <constraint firstItem="n62-xp-E1w" firstAttribute="top" secondItem="nhv-EV-RrK" secondAttribute="top" constant="30" id="ki4-H6-a3P"/>
+                                    <constraint firstAttribute="bottom" secondItem="l2D-Ps-3mu" secondAttribute="bottom" constant="30" id="qrx-b9-axf"/>
+                                    <constraint firstItem="l2D-Ps-3mu" firstAttribute="leading" secondItem="nhv-EV-RrK" secondAttribute="leading" constant="8" id="uZd-J5-UCG"/>
+                                    <constraint firstAttribute="trailing" secondItem="l2D-Ps-3mu" secondAttribute="trailing" constant="8" id="ud9-Mr-wSS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="0.94787081870000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nhv-EV-RrK" firstAttribute="leading" secondItem="VMr-rw-3oN" secondAttribute="leading" constant="25" id="clr-sw-xSL"/>
+                            <constraint firstItem="nhv-EV-RrK" firstAttribute="centerY" secondItem="VMr-rw-3oN" secondAttribute="centerY" id="dqu-yS-9Y4"/>
+                            <constraint firstItem="VMr-rw-3oN" firstAttribute="trailing" secondItem="nhv-EV-RrK" secondAttribute="trailing" constant="25" id="p4y-hn-PVn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VMr-rw-3oN"/>
+                    </view>
+                    <connections>
+                        <outlet property="activity" destination="hBZ-Kn-1Wb" id="57L-8o-ZS7"/>
+                        <outlet property="mainTitleLabel" destination="n62-xp-E1w" id="gxh-cu-RsJ"/>
+                        <outlet property="subTitleLabel" destination="l2D-Ps-3mu" id="nuD-hc-xuV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hde-Qt-w7f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1577" y="-597"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Frame 1" width="55" height="6"/>
+        <image name="Frame 2" width="55" height="6"/>
+        <image name="Frame 3" width="55" height="6"/>
+        <image name="Frame 4" width="55" height="6"/>
+        <image name="Frame 6" width="55" height="6"/>
+        <image name="Frame 7" width="55" height="6"/>
+        <image name="Group" width="91" height="91"/>
+        <image name="Handwashing-rafiki 1" width="241" height="241"/>
+        <image name="Search engines-rafiki 1" width="269" height="269"/>
+        <image name="Social Distancing-rafiki 1" width="266" height="266"/>
+        <image name="drawing 1" width="218" height="218"/>
+        <image name="isolate 1" width="268" height="268"/>
+        <image name="medicalsvg 1" width="242" height="242"/>
+        <image name="undraw_smiley_face_lmgm (1) 1" width="264" height="196"/>
+    </resources>
+</document>
