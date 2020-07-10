@@ -30,7 +30,7 @@ class DynamicViewControllerPathResolver {
 
 enum StoryBoardsID: String {
     case boardMain = "Main"
-    case boardOnBoarding = "OnBoarding"
+    case boardOnBoarding = "Onboarding"
  
     
     func get(for controllerId: ViewControllerID)-> UIViewController? {
@@ -66,10 +66,14 @@ enum StoryBoardsID: String {
         return false
     }
     
-//    static func gotoDashboard() {
-//        let _ = StoryBoardsID.boardDashboard.makeAsRoot(using: .dashboard__root)
-//    }
-//
+    static func gotoDailyMotivational() {
+        let _ = StoryBoardsID.boardMain.makeAsRoot(using: .daily__motivational)
+    }
+    
+    static func gotoWashHandFreqeuntly() {
+        let _ = StoryBoardsID.boardOnBoarding.makeAsRoot(using: .on__boarding)
+      }
+
 //    static func gotoLogin() {
 //        let _ = StoryBoardsID.boardLogin.makeAsRoot(using: .login__getStarted)
 //    }
@@ -138,5 +142,7 @@ enum ViewControllerID: String{
    case StateScreenViewController = "StateScreenViewController"
    case onboarding__creatingModal = "onboardingCreatingModal"
    case main__bottomSheet = "bottomSheet"
+   case daily__motivational = "DailyMotivational"
+   case on__boarding = "OnBoarding"
 }
 

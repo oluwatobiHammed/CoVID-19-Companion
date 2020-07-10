@@ -7,12 +7,12 @@
 //
 
 import Foundation
-
+import UIKit
 extension NSMutableAttributedString {
     func addBrandText(text: String, attributes: [NSAttributedString.Key : Any]? = nil) {
         var toUseAttributes: [NSAttributedString.Key : Any] = attributes ?? [:]
         if toUseAttributes[NSAttributedString.Key.font] == nil {
-            toUseAttributes[NSAttributedString.Key.font] = FontStyle.Default.getFont()
+            toUseAttributes[NSAttributedString.Key.font] =  UIFont.monospacedDigitSystemFont(ofSize: 15, weight: .regular)
         }
         let attribute = NSAttributedString(string: text, attributes: toUseAttributes)
         self.append(attribute)
@@ -21,7 +21,7 @@ extension NSMutableAttributedString {
     func addBoldBrandText(text: String, attributes: [NSAttributedString.Key : Any]? = nil) {
         var toUseAttributes: [NSAttributedString.Key : Any] = attributes ?? [:]
         if toUseAttributes[NSAttributedString.Key.font] == nil {
-            toUseAttributes[NSAttributedString.Key.font] = FontStyle.Bold.getFont()
+            toUseAttributes[NSAttributedString.Key.font] =  UIFont.boldSystemFont(ofSize: 21)
         }
         let attribute = NSAttributedString(string: text, attributes: toUseAttributes)
         self.append(attribute)
