@@ -79,9 +79,9 @@ class BrandLabel: UILabel {
     }
     
     func updateLabelFont() {
-        if let font = FontStyle.fontFromStyle(name: themeFont) {
-            self.usingFont(of: font, sizeBy: sizeBy)
-        }
+//        if let font = FontStyle.fontFromStyle(name: themeFont) {
+//            self.usingFont(of: font, sizeBy: sizeBy)
+//        }
     }
     
     override func drawText(in rect: CGRect) {

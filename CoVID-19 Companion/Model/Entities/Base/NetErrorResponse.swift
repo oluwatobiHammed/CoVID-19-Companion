@@ -31,9 +31,9 @@ class NetError: NSObject, Mappable {
 }
 
 class TranslatedNetError: Error {
-    var errors: [ErrorMessage] = []
+    var errors: [NetError] = []
     var defaultMessage: String?
-    init(errors: [ErrorMessage]) {
+    init(errors: [NetError]) {
         self.errors = errors
     }
     

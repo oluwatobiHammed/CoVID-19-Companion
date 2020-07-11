@@ -352,11 +352,11 @@ Cgo
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="d7u-fc-ICk">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="d7u-fc-ICk">
                                 <rect key="frame" x="20" y="20" width="374" height="856"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="aB7-ri-8Um">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="countrycell" id="aB7-ri-8Um">
                                         <rect key="frame" x="0.0" y="28" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aB7-ri-8Um" id="nIV-aY-Fja">
@@ -380,6 +380,7 @@ Cgo
                             <constraint firstItem="3pD-nw-jcu" firstAttribute="centerX" secondItem="cyr-Ab-MyI" secondAttribute="centerX" id="RFn-AD-PIY"/>
                             <constraint firstItem="DnP-95-OvO" firstAttribute="trailing" secondItem="cyr-Ab-MyI" secondAttribute="trailing" id="VHz-s1-4cE"/>
                             <constraint firstItem="o4p-15-Yu8" firstAttribute="trailing" secondItem="mtu-Mn-H2I" secondAttribute="trailing" id="WqH-fx-DEE"/>
+                            <constraint firstAttribute="bottom" secondItem="d7u-fc-ICk" secondAttribute="bottom" constant="20" id="Ych-th-xvD"/>
                             <constraint firstItem="cJw-jt-NBN" firstAttribute="top" secondItem="cyr-Ab-MyI" secondAttribute="top" constant="100" id="Znn-R5-RDS"/>
                             <constraint firstItem="cJw-jt-NBN" firstAttribute="centerX" secondItem="3pD-nw-jcu" secondAttribute="centerX" id="Zx0-Cc-OT7"/>
                             <constraint firstItem="d7u-fc-ICk" firstAttribute="leading" secondItem="I1b-Ks-psx" secondAttribute="leading" constant="20" id="ho1-JL-Uex"/>
@@ -394,6 +395,7 @@ Cgo
                     <connections>
                         <outlet property="dailyMotivationalLabel" destination="o4p-15-Yu8" id="m7m-2K-zNL"/>
                         <outlet property="instructionLabel" destination="3pD-nw-jcu" id="Ppm-iZ-53j"/>
+                        <outlet property="tableView" destination="d7u-fc-ICk" id="gmf-Xp-uqM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jmv-Xd-J4A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -142,8 +142,8 @@ struct ThemeManager {
         style.backgroundColor = ThemeManager.currentTheme().accentColor
         style.messageColor = UIColor.black
         style.titleColor = ThemeManager.currentTheme().mainColor
-        style.messageFont = FontStyle.Default.getFont()
-        style.titleFont = FontStyle.SemiBold.getFont()
+        //style.messageFont = FontStyle.Default.getFont()
+        //style.titleFont = FontStyle.SemiBold.getFont()
         ToastManager.shared.isTapToDismissEnabled = true
         // toggle queueing behavior
         ToastManager.shared.isQueueEnabled = true
@@ -152,16 +152,16 @@ struct ThemeManager {
         
     }
     
-    static func defaultFont(sizeBy: CGFloat = 0)-> UIFont {
-        return FontStyle.Default.getFont(sizeBy: sizeBy)
-    }
+//    static func defaultFont(sizeBy: CGFloat = 0)-> UIFont {
+//        return FontStyle.Default.getFont(sizeBy: sizeBy)
+//    }
     
-    static func withFont(using: FontStyle, sizeBy: CGFloat = 0)-> UIFont {
-        return using.getFont(sizeBy: sizeBy)
-    }
-    
-    static func captionFont(sizeBy: CGFloat = 4)-> UIFont {
-        return FontStyle.Bold.getFont(sizeBy: sizeBy)
-    }
+//    static func withFont(using: FontStyle, sizeBy: CGFloat = 0)-> UIFont {
+//        return using.getFont(sizeBy: sizeBy)
+//    }
+//    
+//    static func captionFont(sizeBy: CGFloat = 4)-> UIFont {
+//        return FontStyle.Bold.getFont(sizeBy: sizeBy)
+//    }
 }
 

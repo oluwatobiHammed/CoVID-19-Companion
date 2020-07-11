@@ -26,7 +26,7 @@
 		31985426248E2A7E006D3D6C /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31985425248E2A7E006D3D6C /* Typography.swift */; };
 		31985457248E2B54006D3D6C /* StringResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31985456248E2B54006D3D6C /* StringResource.swift */; };
 		31985459248E3BBF006D3D6C /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31985458248E3BBF006D3D6C /* Onboarding.storyboard */; };
-		3198545D248E69C5006D3D6C /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3198545C248E69C5006D3D6C /* Storyboard.storyboard */; };
+		3198545D248E69C5006D3D6C /* DashBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3198545C248E69C5006D3D6C /* DashBoard.storyboard */; };
 		31985461248E6CFA006D3D6C /* LabelsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3198545F248E6CFA006D3D6C /* LabelsTableViewCell.swift */; };
 		31985462248E6CFA006D3D6C /* LabelsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31985460248E6CFA006D3D6C /* LabelsTableViewCell.xib */; };
 		31985464248E732D006D3D6C /* StateScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31985463248E732D006D3D6C /* StateScreenViewController.swift */; };
@@ -37,8 +37,6 @@
 		31985470248E7C86006D3D6C /* ContactsDisplayRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3198546F248E7C86006D3D6C /* ContactsDisplayRequester.swift */; };
 		31985472248E7E38006D3D6C /* UIResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31985471248E7E38006D3D6C /* UIResponder.swift */; };
 		31985474248E8076006D3D6C /* ToastPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31985473248E8076006D3D6C /* ToastPresenter.swift */; };
-		31985478248E9D9E006D3D6C /* DynamicSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31985477248E9D9E006D3D6C /* DynamicSection.swift */; };
-		3198547A248E9DBD006D3D6C /* DynamicRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31985479248E9DBD006D3D6C /* DynamicRow.swift */; };
 		3198547C248EAB85006D3D6C /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3198547B248EAB85006D3D6C /* BaseViewModel.swift */; };
 		31985489248EADE8006D3D6C /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31985487248EADE8006D3D6C /* ApiError.swift */; };
 		3198548A248EADE8006D3D6C /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31985488248EADE8006D3D6C /* ErrorMessage.swift */; };
@@ -47,9 +45,9 @@
 		31985492248EAFEE006D3D6C /* DecodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31985491248EAFEE006D3D6C /* DecodableExtension.swift */; };
 		31985495248EC17F006D3D6C /* RemoteApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31985494248EC17F006D3D6C /* RemoteApiConstants.swift */; };
 		31985498248EC4F6006D3D6C /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31985497248EC4F6006D3D6C /* Country.swift */; };
-		3198549B248EC7D4006D3D6C /* ICountryRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3198549A248EC7D4006D3D6C /* ICountryRemote.swift */; };
+		3198549B248EC7D4006D3D6C /* ICountriesRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3198549A248EC7D4006D3D6C /* ICountriesRemote.swift */; };
 		3198549D248EC82C006D3D6C /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3198549C248EC82C006D3D6C /* ApiResponse.swift */; };
-		3198549F248EC8F1006D3D6C /* CountryImplRemoteImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3198549E248EC8F1006D3D6C /* CountryImplRemoteImpl.swift */; };
+		3198549F248EC8F1006D3D6C /* CountriesImplRemoteImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3198549E248EC8F1006D3D6C /* CountriesImplRemoteImpl.swift */; };
 		319854A4248ECDA8006D3D6C /* ICountryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319854A3248ECDA8006D3D6C /* ICountryViewModel.swift */; };
 		319854A6248ECDBF006D3D6C /* CountryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319854A5248ECDBF006D3D6C /* CountryViewModel.swift */; };
 		319854AD248EE1DD006D3D6C /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319854AC248EE1DD006D3D6C /* LoadingViewController.swift */; };
@@ -61,6 +59,11 @@
 		319854BA248EF1AF006D3D6C /* NetErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319854B9248EF1AF006D3D6C /* NetErrorResponse.swift */; };
 		319854BC248F6288006D3D6C /* DailyMotivationalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319854BB248F6288006D3D6C /* DailyMotivationalViewController.swift */; };
 		319854BE248F78E0006D3D6C /* NSMutableAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319854BD248F78E0006D3D6C /* NSMutableAttributedString.swift */; };
+		31C6439C24B9DB6300DF2CD3 /* CountryImplRemoteImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C6439B24B9DB6300DF2CD3 /* CountryImplRemoteImpl.swift */; };
+		31C6439E24B9DCFF00DF2CD3 /* ICountryRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C6439D24B9DCFF00DF2CD3 /* ICountryRemote.swift */; };
+		31C643A424B9F04B00DF2CD3 /* CountriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C643A324B9F04B00DF2CD3 /* CountriesViewModel.swift */; };
+		31C643A624B9F06100DF2CD3 /* ICountriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C643A524B9F06100DF2CD3 /* ICountriesViewModel.swift */; };
+		31C643A924B9F72C00DF2CD3 /* SimpleMessageWithHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31C643A824B9F72C00DF2CD3 /* SimpleMessageWithHeader.xib */; };
 		31EB01E724A3D6A2008576DF /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EB01E624A3D6A2008576DF /* OnBoardingViewController.swift */; };
 		AA247453F9EFFC9C3E4E366C /* Pods_CoVID_19_Companion_CoVID_19_CompanionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3C4A7AA7417232F08B5E34B /* Pods_CoVID_19_Companion_CoVID_19_CompanionUITests.framework */; };
 		B27B52281895BA29E7A3BC77 /* Pods_CoVID_19_CompanionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B51D76B3320BEB7B52C737 /* Pods_CoVID_19_CompanionTests.framework */; };
@@ -112,7 +115,7 @@
 		31985425248E2A7E006D3D6C /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
 		31985456248E2B54006D3D6C /* StringResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringResource.swift; sourceTree = "<group>"; };
 		31985458248E3BBF006D3D6C /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
-		3198545C248E69C5006D3D6C /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		3198545C248E69C5006D3D6C /* DashBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DashBoard.storyboard; sourceTree = "<group>"; };
 		3198545F248E6CFA006D3D6C /* LabelsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelsTableViewCell.swift; sourceTree = "<group>"; };
 		31985460248E6CFA006D3D6C /* LabelsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelsTableViewCell.xib; sourceTree = "<group>"; };
 		31985463248E732D006D3D6C /* StateScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateScreenViewController.swift; sourceTree = "<group>"; };
@@ -123,8 +126,6 @@
 		3198546F248E7C86006D3D6C /* ContactsDisplayRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsDisplayRequester.swift; sourceTree = "<group>"; };
 		31985471248E7E38006D3D6C /* UIResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIResponder.swift; sourceTree = "<group>"; };
 		31985473248E8076006D3D6C /* ToastPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastPresenter.swift; sourceTree = "<group>"; };
-		31985477248E9D9E006D3D6C /* DynamicSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicSection.swift; sourceTree = "<group>"; };
-		31985479248E9DBD006D3D6C /* DynamicRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicRow.swift; sourceTree = "<group>"; };
 		3198547B248EAB85006D3D6C /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		31985487248EADE8006D3D6C /* ApiError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 		31985488248EADE8006D3D6C /* ErrorMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
@@ -133,9 +134,9 @@
 		31985491248EAFEE006D3D6C /* DecodableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableExtension.swift; sourceTree = "<group>"; };
 		31985494248EC17F006D3D6C /* RemoteApiConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteApiConstants.swift; sourceTree = "<group>"; };
 		31985497248EC4F6006D3D6C /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
-		3198549A248EC7D4006D3D6C /* ICountryRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICountryRemote.swift; sourceTree = "<group>"; };
+		3198549A248EC7D4006D3D6C /* ICountriesRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICountriesRemote.swift; sourceTree = "<group>"; };
 		3198549C248EC82C006D3D6C /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
-		3198549E248EC8F1006D3D6C /* CountryImplRemoteImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryImplRemoteImpl.swift; sourceTree = "<group>"; };
+		3198549E248EC8F1006D3D6C /* CountriesImplRemoteImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesImplRemoteImpl.swift; sourceTree = "<group>"; };
 		319854A3248ECDA8006D3D6C /* ICountryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICountryViewModel.swift; sourceTree = "<group>"; };
 		319854A5248ECDBF006D3D6C /* CountryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewModel.swift; sourceTree = "<group>"; };
 		319854AC248EE1DD006D3D6C /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +167,11 @@
 		319854CF248FA030006D3D6C /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
 		319854D0248FA030006D3D6C /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; };
 		319854D1248FA030006D3D6C /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.ttf"; sourceTree = "<group>"; };
+		31C6439B24B9DB6300DF2CD3 /* CountryImplRemoteImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryImplRemoteImpl.swift; sourceTree = "<group>"; };
+		31C6439D24B9DCFF00DF2CD3 /* ICountryRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICountryRemote.swift; sourceTree = "<group>"; };
+		31C643A324B9F04B00DF2CD3 /* CountriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewModel.swift; sourceTree = "<group>"; };
+		31C643A524B9F06100DF2CD3 /* ICountriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICountriesViewModel.swift; sourceTree = "<group>"; };
+		31C643A824B9F72C00DF2CD3 /* SimpleMessageWithHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleMessageWithHeader.xib; sourceTree = "<group>"; };
 		31EB01E624A3D6A2008576DF /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		368B8292BCA93C0E20A39424 /* Pods-CoVID-19 CompanionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoVID-19 CompanionTests.release.xcconfig"; path = "Target Support Files/Pods-CoVID-19 CompanionTests/Pods-CoVID-19 CompanionTests.release.xcconfig"; sourceTree = "<group>"; };
 		AB5D1EC2C9E74D01176E7CE3 /* Pods-CoVID-19 Companion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoVID-19 Companion.debug.xcconfig"; path = "Target Support Files/Pods-CoVID-19 Companion/Pods-CoVID-19 Companion.debug.xcconfig"; sourceTree = "<group>"; };
@@ -243,7 +249,6 @@
 				319853EB248E2336006D3D6C /* Info.plist */,
 				31985465248E73BB006D3D6C /* Covid-19CompanionViewController.swift */,
 				3198547B248EAB85006D3D6C /* BaseViewModel.swift */,
-				319854BB248F6288006D3D6C /* DailyMotivationalViewController.swift */,
 			);
 			path = "CoVID-19 Companion";
 			sourceTree = "<group>";
@@ -326,6 +331,7 @@
 		3198545A248E613F006D3D6C /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				31C643A024B9E4AD00DF2CD3 /* ViewModel */,
 				31EB01E524A3D645008576DF /* ViewController */,
 				31985458248E3BBF006D3D6C /* Onboarding.storyboard */,
 			);
@@ -335,10 +341,7 @@
 		3198545B248E69A8006D3D6C /* DashBoard */ = {
 			isa = PBXGroup;
 			children = (
-				31985476248E9D86006D3D6C /* Protocols */,
-				31985475248E9D7C006D3D6C /* Sections */,
-				3198545E248E69EA006D3D6C /* xib-Views */,
-				3198545C248E69C5006D3D6C /* Storyboard.storyboard */,
+				3198545C248E69C5006D3D6C /* DashBoard.storyboard */,
 				319854A0248ECBE0006D3D6C /* ViewController */,
 				319854A2248ECD59006D3D6C /* ViewModel */,
 			);
@@ -369,22 +372,6 @@
 				31985473248E8076006D3D6C /* ToastPresenter.swift */,
 			);
 			path = Utilities;
-			sourceTree = "<group>";
-		};
-		31985475248E9D7C006D3D6C /* Sections */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Sections;
-			sourceTree = "<group>";
-		};
-		31985476248E9D86006D3D6C /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				31985477248E9D9E006D3D6C /* DynamicSection.swift */,
-				31985479248E9DBD006D3D6C /* DynamicRow.swift */,
-			);
-			path = Protocols;
 			sourceTree = "<group>";
 		};
 		31985484248EADE8006D3D6C /* Model */ = {
@@ -418,6 +405,7 @@
 		3198548B248EAE8D006D3D6C /* Remote API */ = {
 			isa = PBXGroup;
 			children = (
+				31C6439A24B9DB3600DF2CD3 /* Country */,
 				31985499248EC7A3006D3D6C /* Countries */,
 				31985493248EC166006D3D6C /* Utils */,
 				3198548C248EAEA4006D3D6C /* Base */,
@@ -453,8 +441,8 @@
 		31985499248EC7A3006D3D6C /* Countries */ = {
 			isa = PBXGroup;
 			children = (
-				3198549A248EC7D4006D3D6C /* ICountryRemote.swift */,
-				3198549E248EC8F1006D3D6C /* CountryImplRemoteImpl.swift */,
+				3198549A248EC7D4006D3D6C /* ICountriesRemote.swift */,
+				3198549E248EC8F1006D3D6C /* CountriesImplRemoteImpl.swift */,
 			);
 			path = Countries;
 			sourceTree = "<group>";
@@ -513,14 +501,35 @@
 		319854B4248EEBCA006D3D6C /* Xib */ = {
 			isa = PBXGroup;
 			children = (
+				3198545E248E69EA006D3D6C /* xib-Views */,
+				31C643A824B9F72C00DF2CD3 /* SimpleMessageWithHeader.xib */,
 				319854B5248EEBE5006D3D6C /* BottomSheetConfig.swift */,
 			);
 			path = Xib;
 			sourceTree = "<group>";
 		};
+		31C6439A24B9DB3600DF2CD3 /* Country */ = {
+			isa = PBXGroup;
+			children = (
+				31C6439B24B9DB6300DF2CD3 /* CountryImplRemoteImpl.swift */,
+				31C6439D24B9DCFF00DF2CD3 /* ICountryRemote.swift */,
+			);
+			path = Country;
+			sourceTree = "<group>";
+		};
+		31C643A024B9E4AD00DF2CD3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				31C643A324B9F04B00DF2CD3 /* CountriesViewModel.swift */,
+				31C643A524B9F06100DF2CD3 /* ICountriesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		31EB01E524A3D645008576DF /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				319854BB248F6288006D3D6C /* DailyMotivationalViewController.swift */,
 				31EB01E624A3D6A2008576DF /* OnBoardingViewController.swift */,
 			);
 			path = ViewController;
@@ -659,8 +668,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				31985462248E6CFA006D3D6C /* LabelsTableViewCell.xib in Resources */,
-				3198545D248E69C5006D3D6C /* Storyboard.storyboard in Resources */,
+				3198545D248E69C5006D3D6C /* DashBoard.storyboard in Resources */,
 				31985459248E3BBF006D3D6C /* Onboarding.storyboard in Resources */,
+				31C643A924B9F72C00DF2CD3 /* SimpleMessageWithHeader.xib in Resources */,
 				319853EA248E2336006D3D6C /* LaunchScreen.storyboard in Resources */,
 				319853E7248E2336006D3D6C /* Assets.xcassets in Resources */,
 				319853E5248E2335006D3D6C /* Main.storyboard in Resources */,
@@ -793,7 +803,9 @@
 			files = (
 				3198549D248EC82C006D3D6C /* ApiResponse.swift in Sources */,
 				319854B8248EED7F006D3D6C /* BottomSheetViewController.swift in Sources */,
+				31C643A624B9F06100DF2CD3 /* ICountriesViewModel.swift in Sources */,
 				31985470248E7C86006D3D6C /* ContactsDisplayRequester.swift in Sources */,
+				31C643A424B9F04B00DF2CD3 /* CountriesViewModel.swift in Sources */,
 				31985419248E2722006D3D6C /* BrandLabel.swift in Sources */,
 				319853E2248E2335006D3D6C /* ViewController.swift in Sources */,
 				3198541A248E2722006D3D6C /* CaptionLabel.swift in Sources */,
@@ -807,7 +819,6 @@
 				319853DE248E2335006D3D6C /* AppDelegate.swift in Sources */,
 				319854AD248EE1DD006D3D6C /* LoadingViewController.swift in Sources */,
 				31985468248E752F006D3D6C /* ViewControllerExtension.swift in Sources */,
-				31985478248E9D9E006D3D6C /* DynamicSection.swift in Sources */,
 				31985464248E732D006D3D6C /* StateScreenViewController.swift in Sources */,
 				31985472248E7E38006D3D6C /* UIResponder.swift in Sources */,
 				3198548E248EAF49006D3D6C /* BaseRemoteApiImpl.swift in Sources */,
@@ -817,8 +828,10 @@
 				31985457248E2B54006D3D6C /* StringResource.swift in Sources */,
 				3198546B248E7747006D3D6C /* RxNotificationCenterRequest.swift in Sources */,
 				319854BA248EF1AF006D3D6C /* NetErrorResponse.swift in Sources */,
-				3198549F248EC8F1006D3D6C /* CountryImplRemoteImpl.swift in Sources */,
+				3198549F248EC8F1006D3D6C /* CountriesImplRemoteImpl.swift in Sources */,
+				31C6439E24B9DCFF00DF2CD3 /* ICountryRemote.swift in Sources */,
 				3198541C248E2722006D3D6C /* RoundedLabel.swift in Sources */,
+				31C6439C24B9DB6300DF2CD3 /* CountryImplRemoteImpl.swift in Sources */,
 				31985422248E28AB006D3D6C /* Theme.swift in Sources */,
 				319854A6248ECDBF006D3D6C /* CountryViewModel.swift in Sources */,
 				31985474248E8076006D3D6C /* ToastPresenter.swift in Sources */,
@@ -826,8 +839,7 @@
 				31985424248E2A22006D3D6C /* UIColorExtention.swift in Sources */,
 				31985490248EAF74006D3D6C /* IBaseRemoteApi.swift in Sources */,
 				31985420248E27FD006D3D6C /* UILabelExtension.swift in Sources */,
-				3198549B248EC7D4006D3D6C /* ICountryRemote.swift in Sources */,
-				3198547A248E9DBD006D3D6C /* DynamicRow.swift in Sources */,
+				3198549B248EC7D4006D3D6C /* ICountriesRemote.swift in Sources */,
 				319854A4248ECDA8006D3D6C /* ICountryViewModel.swift in Sources */,
 				31985426248E2A7E006D3D6C /* Typography.swift in Sources */,
 				31985466248E73BB006D3D6C /* Covid-19CompanionViewController.swift in Sources */,

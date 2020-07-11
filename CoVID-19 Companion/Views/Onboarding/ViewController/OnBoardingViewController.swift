@@ -119,6 +119,8 @@ class OnBoardingViewController: Covid_19CompanionViewController {
             text.addBoldBrandText(text: "Why?\n")
             text.addBrandText(text: "National and local authorities will have the most up to date information on whether COVID-19 is spreading in your area. They are best placed to advise on what people in your area should be doing to protect themselves. ")
             descriptionLabel?.attributedText = text
+            UserDefaults.standard.set(true,forKey: "isLoggedIn")
+            UserDefaults.standard.synchronize()
             
         default:
             break
@@ -126,9 +128,7 @@ class OnBoardingViewController: Covid_19CompanionViewController {
         print(page)
     }
     
-    private func isLoggedIn () -> Bool {
-        return UserDefaults.standard.bool(forKey: "isLoggedIn")
-    }
+  
     
     @IBAction func backButtonPressed(_ sender: Any) {
         if page! > 1 {

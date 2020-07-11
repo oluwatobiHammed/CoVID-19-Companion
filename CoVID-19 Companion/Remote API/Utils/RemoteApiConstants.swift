@@ -11,7 +11,8 @@ import Foundation
 class RemoteApiConstants {
     
     enum Endpoints {
-        static let base = "https://disease.sh/v2"
+        static let base = "https://disease.sh/v3"
+        case getCountries
         case getCountry(String)
         
         
@@ -20,6 +21,8 @@ class RemoteApiConstants {
                 
             case .getCountry(let query):
                 return     Endpoints.base + "/countries/\(query)"
+            case .getCountries:
+                return     Endpoints.base + "/covid-19/countries"
             }
         }
         

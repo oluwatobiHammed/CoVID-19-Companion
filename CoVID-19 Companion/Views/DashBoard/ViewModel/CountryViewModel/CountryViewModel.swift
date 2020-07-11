@@ -9,27 +9,27 @@
 import Foundation
 import RxSwift
 
-class CountryViewModel: BaseViewModel,ICountryViewModel  {
-    var countryResponse: PublishSubject<Country> = PublishSubject()
-    
-    
-    let countryRepo: ICountryRemote
-    
-    init(countryRepo: ICountryRemote) {
-        self.countryRepo = countryRepo
-    }
-    
-    func countryResponse(countryName: String) {
-        countryRepo.getCountry(query: countryName).subscribe(onNext: { (res) in
-            if let res = res.data {
-                self.countryResponse.onNext(res)
-            }
-             else if let apiErr = res.error {
-                            self.apiError.onNext(apiErr)
-                        }
-        }, onError: { (error) in
-            self.throwableError.onNext(error)
-        }).disposed(by: disposeBag)
-      }
-    
-}
+//class CountryViewModel: ICountryViewModel  {
+//    var countryResponse: PublishSubject<Country> = PublishSubject()
+//    
+//    
+//    let countryRepo: ICountryRemote
+//    
+//    init(countryRepo: ICountryRemote) {
+//        self.countryRepo = countryRepo
+//    }
+//    
+//    func countryResponse(countryName: String) {
+//        countryRepo.getCountry(query: countryName).subscribe(onNext: { (res) in
+//            if let res = res.data {
+//                self.countryResponse.onNext(res)
+//            }
+//             else if let apiErr = res.error {
+//                            self.apiError.onNext(apiErr)
+//                        }
+//        }, onError: { (error) in
+//            self.throwableError.onNext(error)
+//        }).disposed(by: disposeBag)
+//      }
+//    
+//}

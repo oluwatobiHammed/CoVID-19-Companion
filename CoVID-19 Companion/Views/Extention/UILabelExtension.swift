@@ -28,16 +28,16 @@ extension UILabel {
         self.text = localizedString(forKey: key)
     }
     func useCaptionFont() {
-        self.font = ThemeManager.captionFont()
+        //self.font = ThemeManager.captionFont()
     }
     func useCaptionFont(by: CGFloat) {
-        self.font = ThemeManager.captionFont(sizeBy: by)
+        //self.font = ThemeManager.captionFont(sizeBy: by)
     }
     func useDefaultFont(by: CGFloat=0) {
-        self.font = ThemeManager.defaultFont(sizeBy: by)
+        //self.font = ThemeManager.defaultFont(sizeBy: by)
     }
     func usingFont(of: FontStyle, sizeBy: CGFloat = 0) {
-        self.font = of.getFont(sizeBy: sizeBy)
+        //
     }
 //    func usingIcon(icon: FontIcon, size: CGFloat = FontStyle.Icon.size, color: UIColor? = nil) {
 //        self.attributedText = icon.string(size: size, color: color)

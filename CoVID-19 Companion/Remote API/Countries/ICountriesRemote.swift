@@ -9,6 +9,6 @@
 import Foundation
 import RxSwift
 
- protocol ICountryRemote {
-    func getCountry(query: String) -> Observable<ApiResponse<Country>>
+ protocol ICountriesRemote {
+    func getCountries() -> Observable<ApiResponse<[Country]>>
 }
