@@ -31,7 +31,8 @@ class DynamicViewControllerPathResolver {
 enum StoryBoardsID: String {
     case boardMain = "Main"
     case boardOnBoarding = "Onboarding"
- 
+    case dashBoard = "DashBoard"
+    
     
     func get(for controllerId: ViewControllerID)-> UIViewController? {
         let storyboard = UIStoryboard(name:self.rawValue, bundle: nil)
@@ -69,18 +70,13 @@ enum StoryBoardsID: String {
     static func gotoDailyMotivational() {
         let _ = StoryBoardsID.boardMain.makeAsRoot(using: .daily__motivational)
     }
-    
-    static func gotoWashHandFreqeuntly() {
-        let _ = StoryBoardsID.boardOnBoarding.makeAsRoot(using: .on__boarding)
+    static func gotoDashboard() {
+          let _ = StoryBoardsID.dashBoard.makeAsRoot(using: .StateScreenViewController)
       }
-
-//    static func gotoLogin() {
-//        let _ = StoryBoardsID.boardLogin.makeAsRoot(using: .login__getStarted)
-//    }
-//
-//    static func gotoDashboard(from: UIViewController) {
-//        let _ = StoryBoardsID.boardDashboard.navigate(to: .dashboard__root, from: from, asRoot: true, completion: nil)
-//    }
+    
+//        static func gotoDashboard(from: UIViewController) {
+//            let _ = StoryBoardsID.dashBoard.navigate(to: .dash__board, from: from, asRoot: true, completion: nil)
+//        }
     
     func navigate(to: ViewControllerID, from: UIViewController, asRoot: Bool = false, completion: (() -> Swift.Void)? = nil)-> Bool {
         if asRoot {
@@ -139,10 +135,11 @@ enum StoryBoardsID: String {
 }
 
 enum ViewControllerID: String{
-   case StateScreenViewController = "StateScreenViewController"
-   case onboarding__creatingModal = "onboardingCreatingModal"
-   case main__bottomSheet = "bottomSheet"
-   case daily__motivational = "DailyMotivational"
-   case on__boarding = "OnBoarding"
+    case StateScreenViewController = "StateScreenViewController"
+    case onboarding__creatingModal = "onboardingCreatingModal"
+    case main__bottomSheet = "bottomSheet"
+    case daily__motivational = "DailyMotivational"
+    case on__boarding = "OnBoarding"
+    case dash__board = "dashboard"
 }
 

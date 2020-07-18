@@ -13,8 +13,8 @@ import RxCocoa
 class CountryImplRemoteImpl: ICountryRemote {
         static var shared = CountryImplRemoteImpl()
         lazy var requestObservable = BaseRemoteApiImpl(config: .default)
-    func getCountry(query: String) -> Observable<ApiResponse<[Country]>> {
-        return requestObservable.makeAPIRequestObservable(responseType: ApiResponse<[Country]>.self, url:RemoteApiConstants.Endpoints.getCountry(query).url, method: .Get, params: [:])
+    func getCountry() -> Observable<ApiResponse<AllCountiesResponse>> {
+        return requestObservable.makeAPIRequestObservable(responseType: ApiResponse<AllCountiesResponse>.self, url:RemoteApiConstants.Endpoints.getCountry.url, method: .Get, params: [:])
         }
     
 }

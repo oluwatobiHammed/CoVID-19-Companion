@@ -8,6 +8,7 @@
 
 import UIKit
 import RxSwift
+import RealmSwift
 
 class DailyMotivationalViewController: Covid_19CompanionViewController {
     @IBOutlet weak var dailyMotivationalLabel: UILabel!
@@ -16,7 +17,7 @@ class DailyMotivationalViewController: Covid_19CompanionViewController {
     var timer = Timer()
     var counter = 0
     var resumeTapped = false
-    
+    fileprivate let realm = try! Realm()
     var itemsToRender: [Country] = [] {
          didSet {
              DispatchQueue.main.async {
@@ -27,23 +28,37 @@ class DailyMotivationalViewController: Covid_19CompanionViewController {
     var disposable: Disposable?
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addTapGesture {
-            self.loggedIn()
-        }
-        //runTimer()
+        print(Realm.Configuration.defaultConfiguration.fileURL!)
         loggedIn()
         setUpView()
-        requestCountries()
         tableView.dataSource = self
         tableView.delegate = self
         // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        view.addTapGesture {
-            self.loggedIn()
-        }
+//        view.addTapGesture {
+//            self.loggedIn()
+//        }
     
+    }
+    
+    func saveAllCountries(counties: AllCountiesResponse){
+    try! realm.write {
+              if isLoggedIn() {
+                realm.delete(realm.objects(AllCountiesResponse.self))
+                realm.add(counties)
+              }else {
+                 realm.add(counties)
+              }
+             
+          }
+    }
+    func save(counties: Country){
+        try! realm.write {
+                realm.add(counties)
+           
+        }
     }
     
     func rearrange<T>(array: Array<T>, fromIndex: Int, toIndex: Int) -> Array<T>{
@@ -53,6 +68,28 @@ class DailyMotivationalViewController: Covid_19CompanionViewController {
         arr.insert(element, at: toIndex)
 
         return arr
+    }
+    
+    func requestAllCountries()  {
+        self.disposable = CountryImplRemoteImpl.shared.getCountry().subscribe(onNext: { (all) in
+            DispatchQueue.main.async {
+                if let allCountry = all.data{
+                    print(allCountry.cases)
+                   self.saveAllCountries(counties: allCountry)
+                }
+                
+            }
+        },onError: { (error) in
+               DispatchQueue.main.async {
+                print("This is the error message",error)
+                 self.showTransactioErrorMessage(error: error, title: "Validation Failure", defaultMessage: "Unable to validate your easy account number at the moment, please try again")
+                         }
+                     
+        },  onCompleted: {
+                   
+               }) {
+                   
+               }
     }
     func requestCountries() {
         self.currentLoadingModal = LoadingViewController.showViewController(self, mainTitle: "Loading....", subTitle: "please wait....")
@@ -75,15 +112,22 @@ class DailyMotivationalViewController: Covid_19CompanionViewController {
                }) {
                    
                }
+        
+        
     }
     
     private func loggedIn () {
-        
         if isLoggedIn() {
-            tableView.alpha = 0
-             runTimer()
+            runTimer()
+            requestAllCountries()
+            view.addTapGesture {
+                self.timer.invalidate()
+                     _ = StoryBoardsID.dashBoard.requestNavigation(to: .dash__board, from: self, requestData: nil, mode: .addToParent)
+                  }
         }else{
-          
+           runTimer()
+           requestAllCountries()
+           requestCountries()
         }
     }
     
@@ -115,25 +159,27 @@ class DailyMotivationalViewController: Covid_19CompanionViewController {
     
     @objc func timerAction()  {
         counter += 1
-        print(counter)
-        if counter == 2 {
+        switch counter {
+        case 2:
             instructionLabel.alpha  = 1
-        }
-        if counter == 3{
-            instructionLabel.alpha  = 0
-        }
-        if counter == 4 {
+        case 3:
+             instructionLabel.alpha  = 0
+        case 4:
             instructionLabel.alpha  = 1
             instructionLabel.text = "Tap anywhere to dismiss the splashscreen"
-        }
-        
-        if counter == 7 {
+        case 7:
             instructionLabel.alpha  = 0
-           
-            //_ = StoryBoardsID.boardOnBoarding.requestNavigation(to: .on__boarding, from: self, requestData: nil)
-        }
-        if counter == 10 {
+        case 10:
             timer.invalidate()
+            if isLoggedIn() {
+                 tableView.alpha = 0
+                _ = StoryBoardsID.dashBoard.requestNavigation(to: .dash__board, from: self, requestData: nil, mode: .addToParent)
+            }else{
+                 tableView.alpha = 1
+            }
+          
+        default: break
+          
         }
     }
     
@@ -151,7 +197,9 @@ extension DailyMotivationalViewController: UITableViewDataSource, UITableViewDel
         cell.textLabel?.text = itemsToRender[indexPath.row].country
         cell.addTapGesture {
             self.itemsToRender.append(contentsOf: self.rearrange(array: self.itemsToRender, fromIndex: indexPath.row, toIndex: 0))
-            print(self.itemsToRender)
+            self.itemsToRender.forEach { (Country) in
+                self.save(counties: Country)
+            }
             _ = StoryBoardsID.boardOnBoarding.requestNavigation(to: .on__boarding, from: self, requestData: nil)
         }
         return cell

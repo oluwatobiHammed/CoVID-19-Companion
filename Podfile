@@ -10,6 +10,8 @@ target 'CoVID-19 Companion' do
   pod 'RxSwift'                       #,    '~> 4.0'
   pod 'RxCocoa'                       #,    '~> 4.0'
   pod 'ObjectMapper'                  #, '~> 3.1'
+  pod 'RealmSwift'
+  pod 'Kingfisher', '~> 5.14'
 
   target 'CoVID-19 CompanionTests' do
     inherit! :search_paths

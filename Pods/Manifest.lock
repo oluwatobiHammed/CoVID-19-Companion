@@ -1,5 +1,13 @@
 PODS:
+  - Kingfisher (5.14.0):
+    - Kingfisher/Core (= 5.14.0)
+  - Kingfisher/Core (5.14.0)
   - ObjectMapper (4.2.0)
+  - Realm (5.0.2):
+    - Realm/Headers (= 5.0.2)
+  - Realm/Headers (5.0.2)
+  - RealmSwift (5.0.2):
+    - Realm (= 5.0.2)
   - RxCocoa (5.1.1):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
@@ -9,26 +17,34 @@ PODS:
   - Toast-Swift (5.0.1)
 
 DEPENDENCIES:
+  - Kingfisher (~> 5.14)
   - ObjectMapper
+  - RealmSwift
   - RxCocoa
   - RxSwift
   - Toast-Swift
 
 SPEC REPOS:
   trunk:
+    - Kingfisher
     - ObjectMapper
+    - Realm
+    - RealmSwift
     - RxCocoa
     - RxRelay
     - RxSwift
     - Toast-Swift
 
 SPEC CHECKSUMS:
+  Kingfisher: 7b64389a43139c903ec434788344c288217c792d
   ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  Realm: 6b6f096671b64b04d08974177cabb2ff9343d153
+  RealmSwift: a3db6be0488bf3e1d5314c2956cefe98a65cdd01
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: d3c8749f1264e65a1c40598af14b2cd3f513dbd9
+PODFILE CHECKSUM: 478e6522cdb9ce5542ef6f6dbc513537dc3fa750
 
 COCOAPODS: 1.9.2

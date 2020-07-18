@@ -121,9 +121,10 @@ class OnBoardingViewController: Covid_19CompanionViewController {
             descriptionLabel?.attributedText = text
             UserDefaults.standard.set(true,forKey: "isLoggedIn")
             UserDefaults.standard.synchronize()
+        case 9:
+             _ = StoryBoardsID.dashBoard.requestNavigation(to: .dash__board, from: self, requestData: nil, mode: .addToParent)
+        default: break
             
-        default:
-            break
         }
         print(page)
     }
@@ -138,7 +139,7 @@ class OnBoardingViewController: Covid_19CompanionViewController {
         
     }
     @IBAction func nextButtonPressed(_ sender: Any) {
-        if page! < 8 {
+        if page! < 9 {
             page! += 1
             setUpViews(page: page!)
         }

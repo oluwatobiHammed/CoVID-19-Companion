@@ -6,14 +6,20 @@
 //  Copyright © 2020 Oladipupo Oluwatobi. All rights reserved.
 //
 
+import RealmSwift
 import Foundation
-
-struct Country: Codable, Equatable {
-    let country: String?
-    let countryInfo: flag?
+ @objcMembers class Country: Object, Codable {
+     dynamic var country: String?
+     dynamic var countryInfo: CountryInfo?
+     dynamic var cases: Int = 0
+     dynamic var deaths: Int = 0
+     dynamic var recovered: Int = 0
+     dynamic var todayCases: Int = 0
+     dynamic var todayDeaths: Int = 0
+     dynamic var todayRecovered: Int = 0
 }
 
 
-struct flag: Codable, Equatable {
-    let flag: String?
+@objcMembers class CountryInfo: Object, Codable {
+   dynamic var flag: String?
 }

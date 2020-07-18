@@ -7,7 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3139264124BDFF9100205E7F /* Proxima Nova Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3139263924BDFF9000205E7F /* Proxima Nova Bold.otf */; };
+		3139264224BDFF9100205E7F /* Proxima Nova Alt Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3139263A24BDFF9000205E7F /* Proxima Nova Alt Bold.otf */; };
+		3139264324BDFF9100205E7F /* Proxima Nova Extrabold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3139263B24BDFF9000205E7F /* Proxima Nova Extrabold.otf */; };
+		3139264424BDFF9100205E7F /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3139263C24BDFF9100205E7F /* ProximaNova-Regular.otf */; };
+		3139264524BDFF9100205E7F /* Proxima Nova Alt Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3139263D24BDFF9100205E7F /* Proxima Nova Alt Thin.otf */; };
+		3139264624BDFF9100205E7F /* Proxima Nova Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3139263E24BDFF9100205E7F /* Proxima Nova Black.otf */; };
+		3139264724BDFF9100205E7F /* Proxima Nova Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3139263F24BDFF9100205E7F /* Proxima Nova Thin.otf */; };
+		3139264824BDFF9100205E7F /* Proxima Nova Alt Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3139264024BDFF9100205E7F /* Proxima Nova Alt Light.otf */; };
+		3139264A24C04D2E00205E7F /* AllCountiesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3139264924C04D2E00205E7F /* AllCountiesResponse.swift */; };
 		314C8F1924B8B77B004FC428 /* UIViewExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314C8F1824B8B77B004FC428 /* UIViewExtention.swift */; };
+		3187DC4F24C241BF00FA82EB /* SliderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3187DC4E24C241BF00FA82EB /* SliderCollectionViewCell.swift */; };
+		3187DC5124C254CB00FA82EB /* BJAutoScrollingCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3187DC5024C254CB00FA82EB /* BJAutoScrollingCollectionView.swift */; };
 		319853DE248E2335006D3D6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319853DD248E2335006D3D6C /* AppDelegate.swift */; };
 		319853E0248E2335006D3D6C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319853DF248E2335006D3D6C /* SceneDelegate.swift */; };
 		319853E2248E2335006D3D6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319853E1248E2335006D3D6C /* ViewController.swift */; };
@@ -62,8 +73,9 @@
 		31C6439C24B9DB6300DF2CD3 /* CountryImplRemoteImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C6439B24B9DB6300DF2CD3 /* CountryImplRemoteImpl.swift */; };
 		31C6439E24B9DCFF00DF2CD3 /* ICountryRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C6439D24B9DCFF00DF2CD3 /* ICountryRemote.swift */; };
 		31C643A424B9F04B00DF2CD3 /* CountriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C643A324B9F04B00DF2CD3 /* CountriesViewModel.swift */; };
-		31C643A624B9F06100DF2CD3 /* ICountriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C643A524B9F06100DF2CD3 /* ICountriesViewModel.swift */; };
 		31C643A924B9F72C00DF2CD3 /* SimpleMessageWithHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31C643A824B9F72C00DF2CD3 /* SimpleMessageWithHeader.xib */; };
+		31C643AB24BBA2AC00DF2CD3 /* GlobalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C643AA24BBA2AC00DF2CD3 /* GlobalTableViewCell.swift */; };
+		31C643AD24BC5F8800DF2CD3 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C643AC24BC5F8800DF2CD3 /* UIImage+Extension.swift */; };
 		31EB01E724A3D6A2008576DF /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EB01E624A3D6A2008576DF /* OnBoardingViewController.swift */; };
 		AA247453F9EFFC9C3E4E366C /* Pods_CoVID_19_Companion_CoVID_19_CompanionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3C4A7AA7417232F08B5E34B /* Pods_CoVID_19_Companion_CoVID_19_CompanionUITests.framework */; };
 		B27B52281895BA29E7A3BC77 /* Pods_CoVID_19_CompanionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B51D76B3320BEB7B52C737 /* Pods_CoVID_19_CompanionTests.framework */; };
@@ -90,7 +102,18 @@
 /* Begin PBXFileReference section */
 		10B51D76B3320BEB7B52C737 /* Pods_CoVID_19_CompanionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoVID_19_CompanionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		25700AEE20B9003FB80AB551 /* Pods_CoVID_19_Companion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoVID_19_Companion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3139263924BDFF9000205E7F /* Proxima Nova Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Bold.otf"; sourceTree = "<group>"; };
+		3139263A24BDFF9000205E7F /* Proxima Nova Alt Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Alt Bold.otf"; sourceTree = "<group>"; };
+		3139263B24BDFF9000205E7F /* Proxima Nova Extrabold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Extrabold.otf"; sourceTree = "<group>"; };
+		3139263C24BDFF9100205E7F /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular.otf"; sourceTree = "<group>"; };
+		3139263D24BDFF9100205E7F /* Proxima Nova Alt Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Alt Thin.otf"; sourceTree = "<group>"; };
+		3139263E24BDFF9100205E7F /* Proxima Nova Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Black.otf"; sourceTree = "<group>"; };
+		3139263F24BDFF9100205E7F /* Proxima Nova Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Thin.otf"; sourceTree = "<group>"; };
+		3139264024BDFF9100205E7F /* Proxima Nova Alt Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Alt Light.otf"; sourceTree = "<group>"; };
+		3139264924C04D2E00205E7F /* AllCountiesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCountiesResponse.swift; sourceTree = "<group>"; };
 		314C8F1824B8B77B004FC428 /* UIViewExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtention.swift; sourceTree = "<group>"; };
+		3187DC4E24C241BF00FA82EB /* SliderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderCollectionViewCell.swift; sourceTree = "<group>"; };
+		3187DC5024C254CB00FA82EB /* BJAutoScrollingCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BJAutoScrollingCollectionView.swift; sourceTree = "<group>"; };
 		319853DA248E2335006D3D6C /* CoVID-19 Companion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoVID-19 Companion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		319853DD248E2335006D3D6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		319853DF248E2335006D3D6C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -170,8 +193,9 @@
 		31C6439B24B9DB6300DF2CD3 /* CountryImplRemoteImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryImplRemoteImpl.swift; sourceTree = "<group>"; };
 		31C6439D24B9DCFF00DF2CD3 /* ICountryRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICountryRemote.swift; sourceTree = "<group>"; };
 		31C643A324B9F04B00DF2CD3 /* CountriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewModel.swift; sourceTree = "<group>"; };
-		31C643A524B9F06100DF2CD3 /* ICountriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICountriesViewModel.swift; sourceTree = "<group>"; };
 		31C643A824B9F72C00DF2CD3 /* SimpleMessageWithHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleMessageWithHeader.xib; sourceTree = "<group>"; };
+		31C643AA24BBA2AC00DF2CD3 /* GlobalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalTableViewCell.swift; sourceTree = "<group>"; };
+		31C643AC24BC5F8800DF2CD3 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		31EB01E624A3D6A2008576DF /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		368B8292BCA93C0E20A39424 /* Pods-CoVID-19 CompanionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoVID-19 CompanionTests.release.xcconfig"; path = "Target Support Files/Pods-CoVID-19 CompanionTests/Pods-CoVID-19 CompanionTests.release.xcconfig"; sourceTree = "<group>"; };
 		AB5D1EC2C9E74D01176E7CE3 /* Pods-CoVID-19 Companion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoVID-19 Companion.debug.xcconfig"; path = "Target Support Files/Pods-CoVID-19 Companion/Pods-CoVID-19 Companion.debug.xcconfig"; sourceTree = "<group>"; };
@@ -210,6 +234,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3139263824BDFF6700205E7F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3139263A24BDFF9000205E7F /* Proxima Nova Alt Bold.otf */,
+				3139264024BDFF9100205E7F /* Proxima Nova Alt Light.otf */,
+				3139263D24BDFF9100205E7F /* Proxima Nova Alt Thin.otf */,
+				3139263E24BDFF9100205E7F /* Proxima Nova Black.otf */,
+				3139263924BDFF9000205E7F /* Proxima Nova Bold.otf */,
+				3139263B24BDFF9000205E7F /* Proxima Nova Extrabold.otf */,
+				3139263F24BDFF9100205E7F /* Proxima Nova Thin.otf */,
+				3139263C24BDFF9100205E7F /* ProximaNova-Regular.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		319853D1248E2334006D3D6C = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +274,7 @@
 		319853DC248E2335006D3D6C /* CoVID-19 Companion */ = {
 			isa = PBXGroup;
 			children = (
+				3139263824BDFF6700205E7F /* Fonts */,
 				319854B4248EEBCA006D3D6C /* Xib */,
 				319854AB248EE1C5006D3D6C /* component-view */,
 				31985484248EADE8006D3D6C /* Model */,
@@ -297,6 +337,7 @@
 				31985491248EAFEE006D3D6C /* DecodableExtension.swift */,
 				319854BD248F78E0006D3D6C /* NSMutableAttributedString.swift */,
 				314C8F1824B8B77B004FC428 /* UIViewExtention.swift */,
+				31C643AC24BC5F8800DF2CD3 /* UIImage+Extension.swift */,
 			);
 			path = Extention;
 			sourceTree = "<group>";
@@ -368,6 +409,7 @@
 		3198546C248E78AC006D3D6C /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				3187DC5024C254CB00FA82EB /* BJAutoScrollingCollectionView.swift */,
 				3198546D248E78D6006D3D6C /* GlobalControllerStoryID.swift */,
 				31985473248E8076006D3D6C /* ToastPresenter.swift */,
 			);
@@ -434,6 +476,7 @@
 			isa = PBXGroup;
 			children = (
 				31985497248EC4F6006D3D6C /* Country.swift */,
+				3139264924C04D2E00205E7F /* AllCountiesResponse.swift */,
 			);
 			path = CountryResponse;
 			sourceTree = "<group>";
@@ -451,6 +494,8 @@
 			isa = PBXGroup;
 			children = (
 				31985463248E732D006D3D6C /* StateScreenViewController.swift */,
+				31C643AA24BBA2AC00DF2CD3 /* GlobalTableViewCell.swift */,
+				3187DC4E24C241BF00FA82EB /* SliderCollectionViewCell.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -521,7 +566,6 @@
 			isa = PBXGroup;
 			children = (
 				31C643A324B9F04B00DF2CD3 /* CountriesViewModel.swift */,
-				31C643A524B9F06100DF2CD3 /* ICountriesViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -667,13 +711,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3139264524BDFF9100205E7F /* Proxima Nova Alt Thin.otf in Resources */,
 				31985462248E6CFA006D3D6C /* LabelsTableViewCell.xib in Resources */,
+				3139264824BDFF9100205E7F /* Proxima Nova Alt Light.otf in Resources */,
+				3139264124BDFF9100205E7F /* Proxima Nova Bold.otf in Resources */,
 				3198545D248E69C5006D3D6C /* DashBoard.storyboard in Resources */,
 				31985459248E3BBF006D3D6C /* Onboarding.storyboard in Resources */,
 				31C643A924B9F72C00DF2CD3 /* SimpleMessageWithHeader.xib in Resources */,
+				3139264624BDFF9100205E7F /* Proxima Nova Black.otf in Resources */,
 				319853EA248E2336006D3D6C /* LaunchScreen.storyboard in Resources */,
+				3139264424BDFF9100205E7F /* ProximaNova-Regular.otf in Resources */,
+				3139264324BDFF9100205E7F /* Proxima Nova Extrabold.otf in Resources */,
 				319853E7248E2336006D3D6C /* Assets.xcassets in Resources */,
 				319853E5248E2335006D3D6C /* Main.storyboard in Resources */,
+				3139264224BDFF9100205E7F /* Proxima Nova Alt Bold.otf in Resources */,
+				3139264724BDFF9100205E7F /* Proxima Nova Thin.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -803,7 +855,6 @@
 			files = (
 				3198549D248EC82C006D3D6C /* ApiResponse.swift in Sources */,
 				319854B8248EED7F006D3D6C /* BottomSheetViewController.swift in Sources */,
-				31C643A624B9F06100DF2CD3 /* ICountriesViewModel.swift in Sources */,
 				31985470248E7C86006D3D6C /* ContactsDisplayRequester.swift in Sources */,
 				31C643A424B9F04B00DF2CD3 /* CountriesViewModel.swift in Sources */,
 				31985419248E2722006D3D6C /* BrandLabel.swift in Sources */,
@@ -813,12 +864,16 @@
 				314C8F1924B8B77B004FC428 /* UIViewExtention.swift in Sources */,
 				3198547C248EAB85006D3D6C /* BaseViewModel.swift in Sources */,
 				319854BE248F78E0006D3D6C /* NSMutableAttributedString.swift in Sources */,
+				31C643AD24BC5F8800DF2CD3 /* UIImage+Extension.swift in Sources */,
+				3187DC5124C254CB00FA82EB /* BJAutoScrollingCollectionView.swift in Sources */,
 				3198548A248EADE8006D3D6C /* ErrorMessage.swift in Sources */,
 				319854BC248F6288006D3D6C /* DailyMotivationalViewController.swift in Sources */,
 				31EB01E724A3D6A2008576DF /* OnBoardingViewController.swift in Sources */,
+				3139264A24C04D2E00205E7F /* AllCountiesResponse.swift in Sources */,
 				319853DE248E2335006D3D6C /* AppDelegate.swift in Sources */,
 				319854AD248EE1DD006D3D6C /* LoadingViewController.swift in Sources */,
 				31985468248E752F006D3D6C /* ViewControllerExtension.swift in Sources */,
+				31C643AB24BBA2AC00DF2CD3 /* GlobalTableViewCell.swift in Sources */,
 				31985464248E732D006D3D6C /* StateScreenViewController.swift in Sources */,
 				31985472248E7E38006D3D6C /* UIResponder.swift in Sources */,
 				3198548E248EAF49006D3D6C /* BaseRemoteApiImpl.swift in Sources */,
@@ -842,6 +897,7 @@
 				3198549B248EC7D4006D3D6C /* ICountriesRemote.swift in Sources */,
 				319854A4248ECDA8006D3D6C /* ICountryViewModel.swift in Sources */,
 				31985426248E2A7E006D3D6C /* Typography.swift in Sources */,
+				3187DC4F24C241BF00FA82EB /* SliderCollectionViewCell.swift in Sources */,
 				31985466248E73BB006D3D6C /* Covid-19CompanionViewController.swift in Sources */,
 				319854B6248EEBE5006D3D6C /* BottomSheetConfig.swift in Sources */,
 				31985489248EADE8006D3D6C /* ApiError.swift in Sources */,

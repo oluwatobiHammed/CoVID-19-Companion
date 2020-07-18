@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Proxima Nova Bold.otf">
+            <string>ProximaNova-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--On Boarding View Controller-->
         <scene sceneID="29F-Bv-B0X">
@@ -15,21 +20,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wash your hands frequently" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l9Y-qQ-bk7">
-                                <rect key="frame" x="20" y="84" width="303" height="69.5"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wash your hands frequently" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l9Y-qQ-bk7" customClass="CaptionLabel" customModule="CoVID_19_Companion" customModuleProvider="target">
+                                <rect key="frame" x="20" y="84" width="303" height="78"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="32"/>
                                 <color key="textColor" red="0.12941176469999999" green="0.58823529409999997" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Handwashing-rafiki 1" translatesAutoresizingMaskIntoConstraints="NO" id="g2p-bi-glN">
-                                <rect key="frame" x="20" y="218.5" width="241" height="241"/>
+                                <rect key="frame" x="20" y="227" width="241" height="241"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="241" id="MVS-5I-wuD"/>
                                     <constraint firstAttribute="width" constant="241" id="RlO-fu-cTh"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4rK-M9-Sls">
-                                <rect key="frame" x="20" y="551" width="374" height="155.5"/>
+                                <rect key="frame" x="20" y="518" width="374" height="155.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Regularly and thoroughly clean your hands with an alcohol-based hand rub or wash them with soap and water.">
                                         <attributes>
@@ -119,7 +124,7 @@ Cg
                             <constraint firstItem="4rK-M9-Sls" firstAttribute="leading" secondItem="g2p-bi-glN" secondAttribute="leading" id="Mvw-Z9-AiP"/>
                             <constraint firstItem="IfZ-g6-WcW" firstAttribute="bottom" secondItem="gWp-Bd-tnW" secondAttribute="bottom" id="SIT-nL-4Tf"/>
                             <constraint firstItem="PDt-jL-SDG" firstAttribute="trailing" secondItem="4rK-M9-Sls" secondAttribute="trailing" id="Wai-VU-YQ8"/>
-                            <constraint firstItem="4rK-M9-Sls" firstAttribute="top" secondItem="g2p-bi-glN" secondAttribute="bottom" constant="91.5" id="XnQ-GA-ZBj"/>
+                            <constraint firstItem="4rK-M9-Sls" firstAttribute="top" secondItem="g2p-bi-glN" secondAttribute="bottom" constant="50" id="XnQ-GA-ZBj"/>
                             <constraint firstItem="jW9-hv-KyU" firstAttribute="leading" secondItem="IfZ-g6-WcW" secondAttribute="leading" constant="20" id="Yd5-3U-Az1"/>
                             <constraint firstItem="gWp-Bd-tnW" firstAttribute="leading" secondItem="4rK-M9-Sls" secondAttribute="leading" id="cnv-0y-LJ6"/>
                             <constraint firstAttribute="trailing" secondItem="4rK-M9-Sls" secondAttribute="trailing" constant="20" id="mBw-nz-xiB"/>
