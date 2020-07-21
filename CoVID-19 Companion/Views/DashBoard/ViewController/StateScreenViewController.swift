@@ -15,9 +15,6 @@ class StateScreenViewController: Covid_19CompanionViewController {
     
     @IBOutlet weak var tableView: UITableView!
 
-    var countryViewModel: ICountryViewModel?
-    var timer:Timer? = nil
-    var validateDisposable: Disposable?
     fileprivate let realm = try! Realm()
     var itemsToRender: Results<Country>?
 
@@ -27,10 +24,7 @@ class StateScreenViewController: Covid_19CompanionViewController {
         tableView.dataSource = self
         itemsToRender = self.realm.objects(Country.self)
         //print(itemsToRender?.count)
-        tableView.rowHeight = UITableView.automaticDimension
-
-        
-        
+        //tableView.rowHeight = UITableView.automaticDimension
     }
     
  
@@ -45,11 +39,6 @@ class StateScreenViewController: Covid_19CompanionViewController {
         
       
     }
-    
-  
-    
-    
-    
     
 }
 
