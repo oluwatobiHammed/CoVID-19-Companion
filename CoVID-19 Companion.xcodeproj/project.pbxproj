@@ -19,6 +19,7 @@
 		314C8F1924B8B77B004FC428 /* UIViewExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314C8F1824B8B77B004FC428 /* UIViewExtention.swift */; };
 		3187DC4F24C241BF00FA82EB /* SliderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3187DC4E24C241BF00FA82EB /* SliderCollectionViewCell.swift */; };
 		3187DC5124C254CB00FA82EB /* BJAutoScrollingCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3187DC5024C254CB00FA82EB /* BJAutoScrollingCollectionView.swift */; };
+		3187DC5324C39C0F00FA82EB /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3187DC5224C39C0F00FA82EB /* HeaderTableViewCell.swift */; };
 		319853DE248E2335006D3D6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319853DD248E2335006D3D6C /* AppDelegate.swift */; };
 		319853E0248E2335006D3D6C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319853DF248E2335006D3D6C /* SceneDelegate.swift */; };
 		319853E2248E2335006D3D6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319853E1248E2335006D3D6C /* ViewController.swift */; };
@@ -76,6 +77,8 @@
 		31C643A924B9F72C00DF2CD3 /* SimpleMessageWithHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31C643A824B9F72C00DF2CD3 /* SimpleMessageWithHeader.xib */; };
 		31C643AB24BBA2AC00DF2CD3 /* GlobalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C643AA24BBA2AC00DF2CD3 /* GlobalTableViewCell.swift */; };
 		31C643AD24BC5F8800DF2CD3 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C643AC24BC5F8800DF2CD3 /* UIImage+Extension.swift */; };
+		31E2924C24C7864E0005BA54 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E2924B24C7864E0005BA54 /* Int+Extension.swift */; };
+		31E2924E24C798480005BA54 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E2924D24C798480005BA54 /* UIButton+Extension.swift */; };
 		31EB01E724A3D6A2008576DF /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EB01E624A3D6A2008576DF /* OnBoardingViewController.swift */; };
 		AA247453F9EFFC9C3E4E366C /* Pods_CoVID_19_Companion_CoVID_19_CompanionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3C4A7AA7417232F08B5E34B /* Pods_CoVID_19_Companion_CoVID_19_CompanionUITests.framework */; };
 		B27B52281895BA29E7A3BC77 /* Pods_CoVID_19_CompanionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B51D76B3320BEB7B52C737 /* Pods_CoVID_19_CompanionTests.framework */; };
@@ -114,6 +117,7 @@
 		314C8F1824B8B77B004FC428 /* UIViewExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtention.swift; sourceTree = "<group>"; };
 		3187DC4E24C241BF00FA82EB /* SliderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderCollectionViewCell.swift; sourceTree = "<group>"; };
 		3187DC5024C254CB00FA82EB /* BJAutoScrollingCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BJAutoScrollingCollectionView.swift; sourceTree = "<group>"; };
+		3187DC5224C39C0F00FA82EB /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
 		319853DA248E2335006D3D6C /* CoVID-19 Companion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoVID-19 Companion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		319853DD248E2335006D3D6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		319853DF248E2335006D3D6C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -196,6 +200,8 @@
 		31C643A824B9F72C00DF2CD3 /* SimpleMessageWithHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleMessageWithHeader.xib; sourceTree = "<group>"; };
 		31C643AA24BBA2AC00DF2CD3 /* GlobalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalTableViewCell.swift; sourceTree = "<group>"; };
 		31C643AC24BC5F8800DF2CD3 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		31E2924B24C7864E0005BA54 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		31E2924D24C798480005BA54 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		31EB01E624A3D6A2008576DF /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		368B8292BCA93C0E20A39424 /* Pods-CoVID-19 CompanionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoVID-19 CompanionTests.release.xcconfig"; path = "Target Support Files/Pods-CoVID-19 CompanionTests/Pods-CoVID-19 CompanionTests.release.xcconfig"; sourceTree = "<group>"; };
 		AB5D1EC2C9E74D01176E7CE3 /* Pods-CoVID-19 Companion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoVID-19 Companion.debug.xcconfig"; path = "Target Support Files/Pods-CoVID-19 Companion/Pods-CoVID-19 Companion.debug.xcconfig"; sourceTree = "<group>"; };
@@ -338,6 +344,8 @@
 				319854BD248F78E0006D3D6C /* NSMutableAttributedString.swift */,
 				314C8F1824B8B77B004FC428 /* UIViewExtention.swift */,
 				31C643AC24BC5F8800DF2CD3 /* UIImage+Extension.swift */,
+				31E2924B24C7864E0005BA54 /* Int+Extension.swift */,
+				31E2924D24C798480005BA54 /* UIButton+Extension.swift */,
 			);
 			path = Extention;
 			sourceTree = "<group>";
@@ -496,6 +504,7 @@
 				31985463248E732D006D3D6C /* StateScreenViewController.swift */,
 				31C643AA24BBA2AC00DF2CD3 /* GlobalTableViewCell.swift */,
 				3187DC4E24C241BF00FA82EB /* SliderCollectionViewCell.swift */,
+				3187DC5224C39C0F00FA82EB /* HeaderTableViewCell.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -858,6 +867,7 @@
 				31985470248E7C86006D3D6C /* ContactsDisplayRequester.swift in Sources */,
 				31C643A424B9F04B00DF2CD3 /* CountriesViewModel.swift in Sources */,
 				31985419248E2722006D3D6C /* BrandLabel.swift in Sources */,
+				31E2924C24C7864E0005BA54 /* Int+Extension.swift in Sources */,
 				319853E2248E2335006D3D6C /* ViewController.swift in Sources */,
 				3198541A248E2722006D3D6C /* CaptionLabel.swift in Sources */,
 				3198546E248E78D6006D3D6C /* GlobalControllerStoryID.swift in Sources */,
@@ -865,6 +875,7 @@
 				3198547C248EAB85006D3D6C /* BaseViewModel.swift in Sources */,
 				319854BE248F78E0006D3D6C /* NSMutableAttributedString.swift in Sources */,
 				31C643AD24BC5F8800DF2CD3 /* UIImage+Extension.swift in Sources */,
+				31E2924E24C798480005BA54 /* UIButton+Extension.swift in Sources */,
 				3187DC5124C254CB00FA82EB /* BJAutoScrollingCollectionView.swift in Sources */,
 				3198548A248EADE8006D3D6C /* ErrorMessage.swift in Sources */,
 				319854BC248F6288006D3D6C /* DailyMotivationalViewController.swift in Sources */,
@@ -899,6 +910,7 @@
 				31985426248E2A7E006D3D6C /* Typography.swift in Sources */,
 				3187DC4F24C241BF00FA82EB /* SliderCollectionViewCell.swift in Sources */,
 				31985466248E73BB006D3D6C /* Covid-19CompanionViewController.swift in Sources */,
+				3187DC5324C39C0F00FA82EB /* HeaderTableViewCell.swift in Sources */,
 				319854B6248EEBE5006D3D6C /* BottomSheetConfig.swift in Sources */,
 				31985489248EADE8006D3D6C /* ApiError.swift in Sources */,
 				31985492248EAFEE006D3D6C /* DecodableExtension.swift in Sources */,

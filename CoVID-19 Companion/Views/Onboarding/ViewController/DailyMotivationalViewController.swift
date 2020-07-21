@@ -17,14 +17,17 @@ class DailyMotivationalViewController: Covid_19CompanionViewController {
     var timer = Timer()
     var counter = 0
     var resumeTapped = false
+    var selectedIndex: Int?
+    let userDefaults = UserDefaults.standard
+    
     fileprivate let realm = try! Realm()
     var itemsToRender: [Country] = [] {
-         didSet {
-             DispatchQueue.main.async {
-                 self.tableView?.reloadData()
-             }
-         }
-     }
+        didSet {
+            DispatchQueue.main.async {
+                self.tableView?.reloadData()
+            }
+        }
+    }
     var disposable: Disposable?
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,31 +36,44 @@ class DailyMotivationalViewController: Covid_19CompanionViewController {
         setUpView()
         tableView.dataSource = self
         tableView.delegate = self
+        let object = self.realm.objects(Country.self)
+               //object?.forEach { (Country) in
+        print(object.count)
+               //}
+        
         // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
-//        view.addTapGesture {
-//            self.loggedIn()
-//        }
-    
+        let realm = try! Realm()
+        try! realm.write {
+            if isLoggedIn() {
+                realm.delete(realm.objects(Country.self))
+            }
+        }
     }
     
     func saveAllCountries(counties: AllCountiesResponse){
-    try! realm.write {
-              if isLoggedIn() {
+        try! realm.write {
+            if isLoggedIn() {
                 realm.delete(realm.objects(AllCountiesResponse.self))
                 realm.add(counties)
-              }else {
-                 realm.add(counties)
-              }
-             
-          }
+            }else {
+                realm.add(counties)
+            }
+            
+        }
     }
     func save(counties: Country){
+        let realm = try! Realm()
         try! realm.write {
+            if isLoggedIn() {
                 realm.add(counties)
-           
+            }else {
+               realm.add(counties)
+               
+            }
+            
         }
     }
     
@@ -66,7 +82,7 @@ class DailyMotivationalViewController: Covid_19CompanionViewController {
         self.itemsToRender.removeAll()
         let element = arr.remove(at: fromIndex)
         arr.insert(element, at: toIndex)
-
+        
         return arr
     }
     
@@ -74,60 +90,79 @@ class DailyMotivationalViewController: Covid_19CompanionViewController {
         self.disposable = CountryImplRemoteImpl.shared.getCountry().subscribe(onNext: { (all) in
             DispatchQueue.main.async {
                 if let allCountry = all.data{
-                    print(allCountry.cases)
-                   self.saveAllCountries(counties: allCountry)
+                    self.saveAllCountries(counties: allCountry)
                 }
                 
             }
         },onError: { (error) in
-               DispatchQueue.main.async {
+            DispatchQueue.main.async {
                 print("This is the error message",error)
-                 self.showTransactioErrorMessage(error: error, title: "Validation Failure", defaultMessage: "Unable to validate your easy account number at the moment, please try again")
-                         }
-                     
+                self.showTransactioErrorMessage(error: error, title: "Validation Failure", defaultMessage: "Unable to validate your easy account number at the moment, please try again")
+            }
+            
         },  onCompleted: {
-                   
-               }) {
-                   
-               }
+            
+        }) {
+            
+        }
     }
     func requestCountries() {
         self.currentLoadingModal = LoadingViewController.showViewController(self, mainTitle: "Loading....", subTitle: "please wait....")
         self.disposable =  CountriesImplRemoteImpl.shared.getCountries().subscribe(onNext: { (countries) in
             DispatchQueue.main.async {
                 if let country = countries.data{
-                    self.itemsToRender =  country
+                    if self.isLoggedIn() {
+                        self.selectedIndex =  Int(self.userDefaults.string(forKey: "selectedIndex")!)
+                        if let selected = self.selectedIndex {
+                            self.itemsToRender.removeAll()
+                            self.itemsToRender.append(contentsOf: self.rearrange(array: country, fromIndex: selected, toIndex: 0))
+                        }
+                        self.itemsToRender.forEach { (Country) in
+                            //print("This is the data",Country)
+                                self.save(counties: Country)
+                       
+                        }
+                    }else {
+                      self.itemsToRender =  country
+                    }
+                    
                 }
                 self.dismissCurrentLoadingModal()
             }
         }, onError: { (error) in
-               DispatchQueue.main.async {
+            DispatchQueue.main.async {
                 self.dismissCurrentLoadingModal()
                 print("This is the error message",error)
-                 self.showTransactioErrorMessage(error: error, title: "Validation Failure", defaultMessage: "Unable to validate your easy account number at the moment, please try again")
-                         }
-                     
+                self.showTransactioErrorMessage(error: error, title: "Validation Failure", defaultMessage: "Unable to validate your easy account number at the moment, please try again")
+            }
+            
         },  onCompleted: {
-                   
-               }) {
-                   
-               }
+            
+        }) {
+            
+        }
         
         
     }
     
     private func loggedIn () {
+         
         if isLoggedIn() {
             runTimer()
             requestAllCountries()
+            requestCountries()
             view.addTapGesture {
                 self.timer.invalidate()
-                     _ = StoryBoardsID.dashBoard.requestNavigation(to: .dash__board, from: self, requestData: nil, mode: .addToParent)
-                  }
+                _ = StoryBoardsID.dashBoard.requestNavigation(to: .dash__board, from: self, requestData: nil, mode: .addToParent)
+            }
         }else{
-           runTimer()
-           requestAllCountries()
-           requestCountries()
+            runTimer()
+            requestAllCountries()
+            requestCountries()
+            view.addTapGesture {
+                           self.timer.invalidate()
+                self.tableView.alpha = 1
+                       }
         }
     }
     
@@ -163,7 +198,7 @@ class DailyMotivationalViewController: Covid_19CompanionViewController {
         case 2:
             instructionLabel.alpha  = 1
         case 3:
-             instructionLabel.alpha  = 0
+            instructionLabel.alpha  = 0
         case 4:
             instructionLabel.alpha  = 1
             instructionLabel.text = "Tap anywhere to dismiss the splashscreen"
@@ -172,14 +207,14 @@ class DailyMotivationalViewController: Covid_19CompanionViewController {
         case 10:
             timer.invalidate()
             if isLoggedIn() {
-                 tableView.alpha = 0
+                tableView.alpha = 0
                 _ = StoryBoardsID.dashBoard.requestNavigation(to: .dash__board, from: self, requestData: nil, mode: .addToParent)
             }else{
-                 tableView.alpha = 1
+                tableView.alpha = 1
             }
-          
+            
         default: break
-          
+            
         }
     }
     
@@ -196,9 +231,14 @@ extension DailyMotivationalViewController: UITableViewDataSource, UITableViewDel
         cell.selectionStyle = .none
         cell.textLabel?.text = itemsToRender[indexPath.row].country
         cell.addTapGesture {
-            self.itemsToRender.append(contentsOf: self.rearrange(array: self.itemsToRender, fromIndex: indexPath.row, toIndex: 0))
+            self.userDefaults.set("\(indexPath.row)", forKey: "selectedIndex")
+            self.selectedIndex =  Int(self.userDefaults.string(forKey: "selectedIndex")!)
+            if let selected = self.selectedIndex {
+                self.itemsToRender.append(contentsOf: self.rearrange(array: self.itemsToRender, fromIndex: selected, toIndex: 0))
+            }
             self.itemsToRender.forEach { (Country) in
-                self.save(counties: Country)
+            //print(Country)
+            self.save(counties: Country)
             }
             _ = StoryBoardsID.boardOnBoarding.requestNavigation(to: .on__boarding, from: self, requestData: nil)
         }

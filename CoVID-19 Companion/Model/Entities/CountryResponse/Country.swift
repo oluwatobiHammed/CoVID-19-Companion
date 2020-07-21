@@ -9,6 +9,7 @@
 import RealmSwift
 import Foundation
  @objcMembers class Country: Object, Codable {
+     dynamic var updated: Int = 0
      dynamic var country: String?
      dynamic var countryInfo: CountryInfo?
      dynamic var cases: Int = 0
@@ -17,9 +18,10 @@ import Foundation
      dynamic var todayCases: Int = 0
      dynamic var todayDeaths: Int = 0
      dynamic var todayRecovered: Int = 0
+
 }
 
 
 @objcMembers class CountryInfo: Object, Codable {
-   dynamic var flag: String?
+    dynamic var flag: String?
 }
